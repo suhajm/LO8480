@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "MONGODB REST API FOR iOS APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhajm/LO8480_Szakdolgozat.git"
+  },
+  "author": "Suhaj Milán (LO8480)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhajm/LO8480_Szakdolgozat/issues"
+  },
+  "homepage": "https://github.com/suhajm/LO8480_Szakdolgozat#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19"
+  }
+}

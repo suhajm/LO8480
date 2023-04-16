@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Personal Info View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Personal_Information" id="Y6W-OH-hqX" customClass="Personal_InfoViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MuE-T1-Zlb">
+                                <rect key="frame" x="20" y="227" width="335" height="231"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tDf-fg-SWG" userLabel="Gender">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Megszólítás:" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wE5-aW-Dz3">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Red"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="TKV-FQ-xk1" userLabel="Title">
+                                                <rect key="frame" x="125.66666666666664" y="0.0" width="209.33333333333337" height="32"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <segments>
+                                                    <segment title="Dr"/>
+                                                    <segment title="Ifj"/>
+                                                    <segment title=""/>
+                                                </segments>
+                                                <color key="tintColor" name="Black"/>
+                                                <color key="selectedSegmentTintColor" name="Red"/>
+                                                <connections>
+                                                    <action selector="titlePickerValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="GVR-8e-Zxz"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rNy-lk-j37" userLabel="Lastname">
+                                        <rect key="frame" x="0.0" y="41" width="335" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.text.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-4Y-WDj">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="37"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="pX9-uh-gqC"/>
+                                                    <constraint firstAttribute="width" constant="40" id="uzQ-LG-1XE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vezetéknév" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-Ul-IGZ">
+                                                <rect key="frame" x="70" y="0.0" width="265" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="tintColor" name="Black"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YyG-j5-vjz" userLabel="Firstname">
+                                        <rect key="frame" x="0.0" y="91" width="335" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.text.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="elr-jV-1zL">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="37"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0yp-wy-0DI"/>
+                                                    <constraint firstAttribute="width" constant="40" id="gL7-Fn-xnj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Keresztnév" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckm-ZG-hkV">
+                                                <rect key="frame" x="70" y="0.0" width="265" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="tintColor" name="Black"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="io9-lw-Tgt" userLabel="Illness/specs">
+                                        <rect key="frame" x="0.0" y="141" width="335" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9VW-CM-U0y">
+                                                <rect key="frame" x="0.0" y="1" width="40" height="38.666666666666671"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="UxP-3o-Rc0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-ct-yp1">
+                                                <rect key="frame" x="70" y="0.0" width="265" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="tintColor" name="Black"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="C8e-tB-847"/>
+                                                </constraints>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-9K-1tY" userLabel="Taj">
+                                        <rect key="frame" x="0.0" y="191" width="335" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-Bs-bwB">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="37"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="1QA-Xf-nzP"/>
+                                                    <constraint firstAttribute="width" constant="40" id="fKe-kY-2cU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TAJ" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="msc-wc-KIg">
+                                                <rect key="frame" x="70" y="0.0" width="265" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ckf-J3-LEO"/>
+                                                </constraints>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cis-bD-jdo">
+                                <rect key="frame" x="20" y="488" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wxj-Wj-RFl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mentés" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="personalInfoBtn"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mEM-0b-iDz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUH-uz-3R8" userLabel="AnimationView">
+                                <rect key="frame" x="112.66666666666669" y="57" width="150" height="150"/>
+                                <color key="backgroundColor" name="White"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1tD-hE-Iak"/>
+                                    <constraint firstAttribute="width" constant="150" id="k4g-It-aNV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1j-HM-s8o">
+                                <rect key="frame" x="20" y="553" width="335" height="205"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="MuE-T1-Zlb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3Jf-l6-wuG"/>
+                            <constraint firstItem="Cis-bD-jdo" firstAttribute="top" secondItem="MuE-T1-Zlb" secondAttribute="bottom" constant="30" id="3gV-Ta-hBf"/>
+                            <constraint firstItem="r1j-HM-s8o" firstAttribute="top" secondItem="Cis-bD-jdo" secondAttribute="bottom" constant="5" id="9yY-AU-gSD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MuE-T1-Zlb" secondAttribute="trailing" constant="20" id="NJI-Xk-Eyp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="r1j-HM-s8o" secondAttribute="bottom" constant="20" id="Oq3-xK-8Fm"/>
+                            <constraint firstItem="r1j-HM-s8o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Vco-GG-3KQ"/>
+                            <constraint firstItem="MuE-T1-Zlb" firstAttribute="top" secondItem="NUH-uz-3R8" secondAttribute="bottom" constant="20" id="Z6J-tK-i7X"/>
+                            <constraint firstItem="Cis-bD-jdo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="h2J-AK-hpC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r1j-HM-s8o" secondAttribute="trailing" constant="20" id="jy8-P1-Vq1"/>
+                            <constraint firstItem="NUH-uz-3R8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="ofI-U7-fSb"/>
+                            <constraint firstItem="NUH-uz-3R8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rwn-kB-zrS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cis-bD-jdo" secondAttribute="trailing" constant="20" id="tod-iu-ebD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="NUH-uz-3R8" id="wDy-Jr-VkV"/>
+                        <outlet property="firstname" destination="Ckm-ZG-hkV" id="5Zd-mr-iVx"/>
+                        <outlet property="ill_specs" destination="4iC-ct-yp1" id="qzh-aw-jDP"/>
+                        <outlet property="infoLabel" destination="r1j-HM-s8o" id="TwH-he-VWr"/>
+                        <outlet property="lastname" destination="J1u-Ul-IGZ" id="L4V-ra-OpV"/>
+                        <outlet property="taj" destination="msc-wc-KIg" id="JQj-ep-qFQ"/>
+                        <outlet property="userTitle" destination="TKV-FQ-xk1" id="uSx-f9-fLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGrey">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="1" green="0.63099998235702515" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

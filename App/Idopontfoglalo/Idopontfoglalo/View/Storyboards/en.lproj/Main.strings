@@ -1,0 +1,93 @@
+
+/* Class = "UIViewController"; title = "Login View Controller Scene"; ObjectID = "18R-x7-Shp"; */
+"18R-x7-Shp.title" = "Login View Controller Scene";
+
+/* Class = "UISegmentedControl"; 9wV-fr-Msz.segmentTitles[0] = "Orvos"; ObjectID = "9wV-fr-Msz"; */
+"9wV-fr-Msz.segmentTitles[0]" = "Orvos";
+
+/* Class = "UISegmentedControl"; 9wV-fr-Msz.segmentTitles[1] = "Páciens"; ObjectID = "9wV-fr-Msz"; */
+"9wV-fr-Msz.segmentTitles[1]" = "Páciens";
+
+/* Class = "UISegmentedControl"; 9wV-fr-Msz.segmentTitles[2] = " "; ObjectID = "9wV-fr-Msz"; */
+"9wV-fr-Msz.segmentTitles[2]" = " ";
+
+/* Class = "UITextField"; placeholder = "Vezetéknév"; ObjectID = "AKh-ow-lfN"; */
+"AKh-ow-lfN.placeholder" = "Vezetéknév";
+
+/* Class = "UIViewController"; title = "Register View Controller Scene"; ObjectID = "G6M-0r-0OY"; */
+"G6M-0r-0OY.title" = "Register View Controller Scene";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JtZ-P5-puq"; */
+"JtZ-P5-puq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KmD-BZ-va2"; */
+"KmD-BZ-va2.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Bejelentkezés"; ObjectID = "MPc-J9-a4e"; */
+"MPc-J9-a4e.configuration.title" = "Bejelentkezés";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MPc-J9-a4e"; */
+"MPc-J9-a4e.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "P6D-Kg-VMb"; */
+"P6D-Kg-VMb.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Regisztráció"; ObjectID = "WYW-do-LDW"; */
+"WYW-do-LDW.title" = "Regisztráció";
+
+/* Class = "UITextField"; placeholder = "Keresztnév"; ObjectID = "WZQ-68-lPK"; */
+"WZQ-68-lPK.placeholder" = "Keresztnév";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "YSF-G1-mFn"; */
+"YSF-G1-mFn.placeholder" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Regisztráció"; ObjectID = "YqC-S2-ib9"; */
+"YqC-S2-ib9.configuration.title" = "Regisztráció";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "ajw-mt-EMx"; */
+"ajw-mt-EMx.placeholder" = "Email";
+
+/* Class = "UISegmentedControl"; cdq-px-0Xk.segmentTitles[0] = "Nő"; ObjectID = "cdq-px-0Xk"; */
+"cdq-px-0Xk.segmentTitles[0]" = "Nő";
+
+/* Class = "UISegmentedControl"; cdq-px-0Xk.segmentTitles[1] = "Férfi"; ObjectID = "cdq-px-0Xk"; */
+"cdq-px-0Xk.segmentTitles[1]" = "Férfi";
+
+/* Class = "UISegmentedControl"; cdq-px-0Xk.segmentTitles[2] = " "; ObjectID = "cdq-px-0Xk"; */
+"cdq-px-0Xk.segmentTitles[2]" = " ";
+
+/* Class = "UITextField"; placeholder = "Jelszó"; ObjectID = "dqF-Mf-IRR"; */
+"dqF-Mf-IRR.placeholder" = "Jelszó";
+
+/* Class = "UITextField"; placeholder = "Jelszó"; ObjectID = "fd8-S4-lRJ"; */
+"fd8-S4-lRJ.placeholder" = "Jelszó";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iJO-fD-BGD"; */
+"iJO-fD-BGD.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "l9f-1V-YM9"; */
+"l9f-1V-YM9.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Bejelentkezés"; ObjectID = "q0F-5f-tCT"; */
+"q0F-5f-tCT.configuration.title" = "Bejelentkezés";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "q0F-5f-tCT"; */
+"q0F-5f-tCT.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Regisztráció"; ObjectID = "v6K-Cd-T3c"; */
+"v6K-Cd-T3c.configuration.title" = "Regisztráció";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "v6K-Cd-T3c"; */
+"v6K-Cd-T3c.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Szerepkör:"; ObjectID = "wPx-oZ-jDf"; */
+"wPx-oZ-jDf.text" = "Szerepkör:";
+
+/* Class = "UILabel"; text = "Nem:"; ObjectID = "xnF-qX-ZUo"; */
+"xnF-qX-ZUo.text" = "Nem:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yjm-5S-6b4"; */
+"yjm-5S-6b4.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Bejelentkezés"; ObjectID = "zp8-Ht-mAm"; */
+"zp8-Ht-mAm.title" = "Bejelentkezés";

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="KGk-i7-Jjw" customClass="RatingsTableViewCell" customModule="Idopontfoglalo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-RM-xQP">
+                        <rect key="frame" x="10" y="10" width="415" height="138"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="htO-4m-iob">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating's title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsW-60-ZjI">
+                                        <rect key="frame" x="0.0" y="0.0" width="207.66666666666666" height="69"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" name="Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NJL-v6-JKU">
+                                        <rect key="frame" x="207.66666666666663" y="0.0" width="207.33333333333337" height="69"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KU1-oX-Xdz">
+                                                <rect key="frame" x="0.0" y="-0.3333333333333357" width="41.333333333333336" height="68.666666666666686"/>
+                                                <color key="tintColor" name="Red"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QvC-0a-yQV">
+                                                <rect key="frame" x="41.333333333333343" y="-0.3333333333333357" width="41.666666666666657" height="68.666666666666686"/>
+                                                <color key="tintColor" name="Red"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PB9-e6-0B2">
+                                                <rect key="frame" x="83.000000000000028" y="-0.3333333333333357" width="41.333333333333343" height="68.666666666666686"/>
+                                                <color key="tintColor" name="Red"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S3a-vC-l1Y">
+                                                <rect key="frame" x="124.33333333333336" y="-0.3333333333333357" width="41.666666666666671" height="68.666666666666686"/>
+                                                <color key="tintColor" name="Red"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9f6-qG-Wot">
+                                                <rect key="frame" x="166.00000000000003" y="-0.3333333333333357" width="41.333333333333343" height="68.666666666666686"/>
+                                                <color key="tintColor" name="Red"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g3Y-MB-wXo">
+                                <rect key="frame" x="0.0" y="69" width="415" height="69"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZeX-vN-0PJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating's text" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhR-ZT-ayA">
+                                                <rect key="frame" x="0.0" y="0.0" width="415" height="34.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-cL-gkI">
+                                                <rect key="frame" x="0.0" y="34.666666666666671" width="415" height="34.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" name="Black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ry6-RM-xQP" secondAttribute="bottom" constant="10" id="dgE-Jf-Z7u"/>
+                    <constraint firstItem="ry6-RM-xQP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fWW-OZ-jLL"/>
+                    <constraint firstAttribute="trailing" secondItem="ry6-RM-xQP" secondAttribute="trailing" constant="10" id="pnc-VW-zsW"/>
+                    <constraint firstItem="ry6-RM-xQP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="suY-Ms-PvL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="White"/>
+            <connections>
+                <outlet property="name" destination="aWf-cL-gkI" id="n01-Ax-vIj"/>
+                <outlet property="ratingText" destination="nhR-ZT-ayA" id="zu6-nk-pfa"/>
+                <outlet property="title" destination="qsW-60-ZjI" id="dYz-xq-ZSU"/>
+                <outletCollection property="starImageCollection" destination="KU1-oX-Xdz" collectionClass="NSMutableArray" id="Ezf-FY-yjN"/>
+                <outletCollection property="starImageCollection" destination="QvC-0a-yQV" collectionClass="NSMutableArray" id="KO4-lQ-LTj"/>
+                <outletCollection property="starImageCollection" destination="PB9-e6-0B2" collectionClass="NSMutableArray" id="yG2-xA-HKQ"/>
+                <outletCollection property="starImageCollection" destination="S3a-vC-l1Y" collectionClass="NSMutableArray" id="06i-dn-TIQ"/>
+                <outletCollection property="starImageCollection" destination="9f6-qG-Wot" collectionClass="NSMutableArray" id="bnf-tl-vmc"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="14"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

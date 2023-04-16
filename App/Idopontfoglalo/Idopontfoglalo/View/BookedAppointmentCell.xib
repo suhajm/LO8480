@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="BookedAppointmentCell" customModule="Idopontfoglalo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="257.66666666666669" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u1R-K5-dbd">
+                        <rect key="frame" x="9.9999999999999858" y="10" width="237.66666666666663" height="88"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserDefaultProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="I5j-dE-ohd">
+                                <rect key="frame" x="0.0" y="4" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6lt-TA-62B"/>
+                                    <constraint firstAttribute="height" constant="80" id="sXw-ce-P0T"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fG6-bG-d45">
+                                <rect key="frame" x="99.999999999999986" y="19.666666666666668" width="137.66666666666663" height="48.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor's name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txO-Gu-5v8">
+                                        <rect key="frame" x="6" y="0.0" width="126" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" name="Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwb-qQ-ih6">
+                                        <rect key="frame" x="52.666666666666657" y="30.666666666666671" width="32.333333333333343" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="White"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="u1R-K5-dbd" secondAttribute="trailing" constant="10" id="APf-J4-niX"/>
+                    <constraint firstItem="u1R-K5-dbd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QmB-WA-pmz"/>
+                    <constraint firstAttribute="bottom" secondItem="u1R-K5-dbd" secondAttribute="bottom" constant="10" id="jVO-Nq-m8g"/>
+                    <constraint firstItem="u1R-K5-dbd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ysG-i3-Tcc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="White"/>
+            <connections>
+                <outlet property="date" destination="Hwb-qQ-ih6" id="1jp-5s-0II"/>
+                <outlet property="doctorName" destination="txO-Gu-5v8" id="ZPr-Tt-NWh"/>
+                <outlet property="doctorProfilePic" destination="I5j-dE-ohd" id="FIA-O8-9nT"/>
+            </connections>
+            <point key="canvasLocation" x="-106.15384615384615" y="9.9526066350710902"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UserDefaultProfilePic" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

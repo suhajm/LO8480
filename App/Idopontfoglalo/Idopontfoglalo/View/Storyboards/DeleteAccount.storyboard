@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete Account View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DeleteAccount" id="Y6W-OH-hqX" customClass="DeleteAccountViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dG-8P-n75">
+                                <rect key="frame" x="20" y="180" width="280" height="119.5"/>
+                                <string key="text">A fiók törlése végleges, és minden adatát törli, beleértve a személyes adatokat, címet, elérhetőséget és az eddigi összes időpontot.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="Red"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biztosan törölni szeretné?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJQ-Nk-IlA">
+                                <rect key="frame" x="20" y="319.5" width="280" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="Red"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCt-uK-E4P">
+                                <rect key="frame" x="85" y="10" width="150" height="150"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ViY-gz-jPi"/>
+                                    <constraint firstAttribute="height" constant="150" id="oiw-Ko-aSu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-Ii-QNm">
+                                <rect key="frame" x="20" y="383.5" width="280" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="k9K-Yi-fRS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fiók törlése" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ozg-Xb-sWb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="xhe-Ii-QNm" firstAttribute="top" secondItem="aJQ-Nk-IlA" secondAttribute="bottom" constant="40" id="5cS-Ri-cpZ"/>
+                            <constraint firstItem="TCt-uK-E4P" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="84J-oi-s3g"/>
+                            <constraint firstItem="0dG-8P-n75" firstAttribute="top" secondItem="TCt-uK-E4P" secondAttribute="bottom" constant="20" id="S4n-tl-zeh"/>
+                            <constraint firstItem="aJQ-Nk-IlA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Tmq-bd-7sZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0dG-8P-n75" secondAttribute="trailing" constant="20" id="br4-ua-ixC"/>
+                            <constraint firstItem="xhe-Ii-QNm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fLv-oQ-4S5"/>
+                            <constraint firstItem="aJQ-Nk-IlA" firstAttribute="top" secondItem="0dG-8P-n75" secondAttribute="bottom" constant="20" id="hvQ-9E-TBP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aJQ-Nk-IlA" secondAttribute="trailing" constant="20" id="pfo-m6-Qez"/>
+                            <constraint firstItem="0dG-8P-n75" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rLb-o5-Kgb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xhe-Ii-QNm" secondAttribute="trailing" constant="20" id="vlz-ga-6o0"/>
+                            <constraint firstItem="TCt-uK-E4P" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="yuL-iQ-3Ol"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="TCt-uK-E4P" id="OI9-2Y-xcC"/>
+                        <segue destination="Q2e-Je-Krp" kind="presentation" identifier="toAuth" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="dBO-gI-vLj"/>
+                        <segue destination="IgP-Wt-z6a" kind="presentation" identifier="deletedAccount" modalPresentationStyle="fullScreen" id="JGu-Vp-lAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1.5384615384615383" y="-28.436018957345969"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="a3b-7T-lge">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Login" id="Q2e-Je-Krp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6W-qs-nky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-76"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="ZSy-B5-FS3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Welcome" id="IgP-Wt-z6a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lTr-58-Xby"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2I-OB-hLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="-29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

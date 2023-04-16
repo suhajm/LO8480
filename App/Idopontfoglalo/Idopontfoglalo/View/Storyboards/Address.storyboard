@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Address View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Address" id="Y6W-OH-hqX" customClass="AddressViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G37-sx-LyL">
+                                <rect key="frame" x="20" y="160" width="280" height="290"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="B1u-nb-hRc" userLabel="Country">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.europe.africa.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J91-bk-Yb3">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Y9t-0s-aZf"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qlV-s2-20d"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Magyarország" borderStyle="roundedRect" placeholder="Ország" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHl-t0-dHv">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0wQ-s0-Dky" userLabel="State">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.europe.africa" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-Ca-cC0">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="T5y-at-YpV"/>
+                                                    <constraint firstAttribute="width" constant="40" id="qJD-MD-dm5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vármegye" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-wN-2tN">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-9R-AgP" userLabel="Postcode">
+                                        <rect key="frame" x="0.0" y="100" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mm3-2h-ada">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="38.5"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="BmD-Mr-Wit"/>
+                                                    <constraint firstAttribute="height" constant="40" id="mRO-P5-PxQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Irányítószám" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBl-Aw-TLb">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HHL-Y2-WoO"/>
+                                                </constraints>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CV0-BI-svt" userLabel="City">
+                                        <rect key="frame" x="0.0" y="150" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.asia.australia.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-r6-1di">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="2oy-Uh-V1Z"/>
+                                                    <constraint firstAttribute="height" constant="40" id="QXN-Bk-yR3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Város" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAa-90-3G5">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4vm-xm-MQE" userLabel="Street">
+                                        <rect key="frame" x="0.0" y="200" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.asia.australia.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-tw-DbY">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Ucf-dS-E1E"/>
+                                                    <constraint firstAttribute="height" constant="40" id="hiT-b7-jI5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Utca" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIY-ED-qOl">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="boj-wF-OMc" userLabel="House">
+                                        <rect key="frame" x="0.0" y="250" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-2k-4L0">
+                                                <rect key="frame" x="0.0" y="-1" width="40" height="40"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="8da-Rg-Gug"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qGe-e1-HhM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Házszám" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ql-kw-qec">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-zN-1jM">
+                                <rect key="frame" x="20" y="470" width="280" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cpS-e8-g0G"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mentés" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bqu-Fq-LDA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBg-nR-nWT">
+                                <rect key="frame" x="85" y="0.0" width="150" height="150"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="U2B-XG-bKS"/>
+                                    <constraint firstAttribute="width" constant="150" id="gTi-yd-THt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNd-Wm-SY2">
+                                <rect key="frame" x="20" y="535" width="280" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G37-sx-LyL" secondAttribute="trailing" constant="20" id="3jv-HE-Ceu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MhM-zN-1jM" secondAttribute="trailing" constant="20" id="5Ii-O5-aWL"/>
+                            <constraint firstItem="MhM-zN-1jM" firstAttribute="top" secondItem="G37-sx-LyL" secondAttribute="bottom" constant="20" id="6Ng-su-LPk"/>
+                            <constraint firstItem="MhM-zN-1jM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="97N-wx-XdE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kNd-Wm-SY2" secondAttribute="trailing" constant="20" id="H3u-dG-8Uw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kNd-Wm-SY2" secondAttribute="bottom" constant="5" id="Kln-yL-ZTq"/>
+                            <constraint firstItem="G37-sx-LyL" firstAttribute="top" secondItem="HBg-nR-nWT" secondAttribute="bottom" constant="10" id="OMJ-Ps-cOg"/>
+                            <constraint firstItem="kNd-Wm-SY2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="PBi-05-LrW"/>
+                            <constraint firstItem="G37-sx-LyL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="PFz-fy-vpR"/>
+                            <constraint firstItem="kNd-Wm-SY2" firstAttribute="top" secondItem="MhM-zN-1jM" secondAttribute="bottom" constant="5" id="aQg-cO-bFD"/>
+                            <constraint firstItem="HBg-nR-nWT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vlF-4u-dKf"/>
+                            <constraint firstItem="HBg-nR-nWT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wK4-dV-9zR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="HBg-nR-nWT" id="9Ns-ki-BZL"/>
+                        <outlet property="city" destination="yAa-90-3G5" id="iew-ru-eDw"/>
+                        <outlet property="country" destination="dHl-t0-dHv" id="cOO-LG-KDK"/>
+                        <outlet property="house" destination="4ql-kw-qec" id="nCn-ub-EoK"/>
+                        <outlet property="infoLabel" destination="kNd-Wm-SY2" id="JAJ-gY-0fz"/>
+                        <outlet property="state" destination="LaE-wN-2tN" id="77c-rO-Zzp"/>
+                        <outlet property="street" destination="fIY-ED-qOl" id="9DW-wq-X8u"/>
+                        <outlet property="zipcode" destination="VBl-Aw-TLb" id="PL4-GX-cN4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="-34.859154929577464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe.asia.australia.fill" catalog="system" width="128" height="123"/>
+        <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
+        <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="number" catalog="system" width="128" height="123"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGrey">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="1" green="0.63099998235702515" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patient Rate Doctor View Controller-->
+        <scene sceneID="gI9-i3-C0b">
+            <objects>
+                <viewController storyboardIdentifier="Rating" id="j5x-eR-CMp" customClass="PatientRateDoctorViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tYz-lC-ASi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="763"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJW-On-0Yz">
+                                <rect key="frame" x="16" y="0.0" width="288" height="763"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-ql-1u1">
+                                        <rect key="frame" x="0.0" y="30" width="293.5" height="763"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="biW-Ss-hlF" userLabel="Doctor info">
+                                                <rect key="frame" x="20" y="10" width="253.5" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserDefaultProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-XL-TzX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <color key="tintColor" name="Red"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="I5m-IH-c5I"/>
+                                                            <constraint firstAttribute="height" constant="100" id="ebj-mc-hEU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ra3-it-gdq">
+                                                        <rect key="frame" x="130" y="29.5" width="123.5" height="41"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor's name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR9-5h-C3N">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <color key="textColor" name="Red"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="értékelése" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAq-z9-vDG">
+                                                                <rect key="frame" x="0.0" y="20.5" width="123.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="Red"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0T0-eX-WjM" userLabel="Stars">
+                                                <rect key="frame" x="20" y="160" width="253.5" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esI-ne-X0Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <color key="baseForegroundColor" name="Red"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="starButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="1Hl-is-iGR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yg-Kj-RPC">
+                                                        <rect key="frame" x="51" y="0.0" width="50.5" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <color key="baseForegroundColor" name="Red"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="starButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="3nx-3N-feD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vso-rM-V6v">
+                                                        <rect key="frame" x="101.5" y="0.0" width="50.5" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <color key="baseForegroundColor" name="Red"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="starButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="Vkn-hU-I5s"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ife-6y-hGu">
+                                                        <rect key="frame" x="152" y="0.0" width="51" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <color key="baseForegroundColor" name="Red"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="starButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="zXQ-IN-6bi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-kI-zQ6">
+                                                        <rect key="frame" x="203" y="0.0" width="50.5" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                            <color key="baseForegroundColor" name="Red"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="starButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="0qT-gv-jPc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="p9f-QV-pCF">
+                                                <rect key="frame" x="20" y="224" width="253.5" height="221"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZG9-Tw-i9O">
+                                                        <rect key="frame" x="0.0" y="0.0" width="253.5" height="59.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Értékelés címe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXe-Ww-Yc1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="Red"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Értékelés címe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMq-gk-T8v">
+                                                                <rect key="frame" x="0.0" y="25.5" width="253.5" height="34"/>
+                                                                <color key="backgroundColor" name="LightRed"/>
+                                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" name="Black"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" name="DarkGrey"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xfE-O6-CF2">
+                                                        <rect key="frame" x="0.0" y="95.5" width="253.5" height="125.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Értékelés szövege" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-PI-Fdd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="Red"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-N7-qiP">
+                                                                <rect key="frame" x="0.0" y="25.5" width="253.5" height="100"/>
+                                                                <color key="backgroundColor" name="LightRed"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="sU3-Rj-upY"/>
+                                                                </constraints>
+                                                                <color key="textColor" name="Black"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="organization-title"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="2Kl-N7-qiP" firstAttribute="leading" secondItem="xfE-O6-CF2" secondAttribute="leading" id="aZD-Gq-SFW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Kl-N7-qiP" secondAttribute="trailing" id="zhK-KH-dTe"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxx-PN-tZL" userLabel="Name">
+                                                <rect key="frame" x="20" y="475" width="253.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Név megjelenítése" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJX-c0-Lym">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <color key="textColor" name="Red"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-13-p33">
+                                                        <rect key="frame" x="204.5" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" name="Red"/>
+                                                        <color key="thumbTintColor" name="White"/>
+                                                        <connections>
+                                                            <action selector="nameSwitchValueChanged:" destination="j5x-eR-CMp" eventType="valueChanged" id="Rem-m8-HUd"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymx-4C-3JD">
+                                                <rect key="frame" x="20" y="556" width="253.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="k0r-m5-Fnp"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="pZc-JQ-a8b"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Értékelés" cornerStyle="capsule">
+                                                    <color key="baseBackgroundColor" name="Red"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="rateButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="ExN-GA-hJI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shF-73-veB">
+                                                <rect key="frame" x="20" y="636" width="253.5" height="28.5"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="További értékelések..." subtitle="" titleAlignment="automatic">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <color key="baseForegroundColor" name="Red"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="moreRatingPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="msa-E1-oE3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lci-AU-bSF">
+                                                <rect key="frame" x="20" y="674.5" width="253.5" height="28.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Értékeléseim kezelése...">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <color key="baseForegroundColor" name="Red"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="manageRatingsPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="WPW-s8-xIp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="0T0-eX-WjM" firstAttribute="top" secondItem="biW-Ss-hlF" secondAttribute="bottom" constant="50" id="0wQ-6S-IWe"/>
+                                            <constraint firstItem="Ymx-4C-3JD" firstAttribute="top" secondItem="Uxx-PN-tZL" secondAttribute="bottom" constant="50" id="4PY-OF-cB8"/>
+                                            <constraint firstItem="p9f-QV-pCF" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="4cQ-Lz-APg"/>
+                                            <constraint firstAttribute="trailing" secondItem="biW-Ss-hlF" secondAttribute="trailing" constant="20" id="6PM-Hp-Ep2"/>
+                                            <constraint firstAttribute="trailing" secondItem="p9f-QV-pCF" secondAttribute="trailing" constant="20" id="A69-ug-OH6"/>
+                                            <constraint firstItem="lci-AU-bSF" firstAttribute="top" secondItem="shF-73-veB" secondAttribute="bottom" constant="10" id="BUL-Sw-PKO"/>
+                                            <constraint firstItem="biW-Ss-hlF" firstAttribute="top" secondItem="SCc-ql-1u1" secondAttribute="top" constant="10" id="GiP-dq-E2g"/>
+                                            <constraint firstItem="shF-73-veB" firstAttribute="top" secondItem="Ymx-4C-3JD" secondAttribute="bottom" constant="20" id="H7J-L1-PzH"/>
+                                            <constraint firstItem="Uxx-PN-tZL" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="Hu5-5h-4WL"/>
+                                            <constraint firstItem="shF-73-veB" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="OYj-7H-KtT"/>
+                                            <constraint firstItem="Ymx-4C-3JD" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="OZ2-zL-o1v"/>
+                                            <constraint firstItem="p9f-QV-pCF" firstAttribute="top" secondItem="0T0-eX-WjM" secondAttribute="bottom" constant="30" id="TB7-PQ-ejS"/>
+                                            <constraint firstItem="lci-AU-bSF" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="Uen-rU-5yo"/>
+                                            <constraint firstItem="Uxx-PN-tZL" firstAttribute="top" secondItem="p9f-QV-pCF" secondAttribute="bottom" constant="30" id="Wew-Sr-8D9"/>
+                                            <constraint firstAttribute="trailing" secondItem="lci-AU-bSF" secondAttribute="trailing" constant="20" id="e2b-7H-h3j"/>
+                                            <constraint firstItem="0T0-eX-WjM" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="fAP-ie-oOa"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uxx-PN-tZL" secondAttribute="trailing" constant="20" id="j2K-v5-w3J"/>
+                                            <constraint firstAttribute="height" constant="763" id="jHy-sr-cNB"/>
+                                            <constraint firstAttribute="trailing" secondItem="0T0-eX-WjM" secondAttribute="trailing" constant="20" id="jxb-jL-a3V"/>
+                                            <constraint firstItem="biW-Ss-hlF" firstAttribute="leading" secondItem="SCc-ql-1u1" secondAttribute="leading" constant="20" id="sxh-wb-RCN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ymx-4C-3JD" secondAttribute="trailing" constant="20" id="u7h-XR-4UD"/>
+                                            <constraint firstAttribute="trailing" secondItem="shF-73-veB" secondAttribute="trailing" constant="20" id="xSJ-ag-jfD"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZc-Hr-6G7">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" name="Red"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="closeButtonPressed:" destination="j5x-eR-CMp" eventType="touchUpInside" id="VGx-gi-Aq1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SCc-ql-1u1" firstAttribute="top" secondItem="fJW-On-0Yz" secondAttribute="top" constant="30" id="d0r-jQ-zGs"/>
+                                    <constraint firstAttribute="trailing" secondItem="SCc-ql-1u1" secondAttribute="trailing" id="dBv-jH-5Bm"/>
+                                    <constraint firstItem="SCc-ql-1u1" firstAttribute="leading" secondItem="fJW-On-0Yz" secondAttribute="leading" id="obB-ET-W9w"/>
+                                    <constraint firstAttribute="bottom" secondItem="SCc-ql-1u1" secondAttribute="bottom" id="ssd-QC-69M"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="obn-AT-r5p"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fJW-On-0Yz" secondAttribute="trailing" id="1sd-lH-XSD"/>
+                            <constraint firstItem="fJW-On-0Yz" firstAttribute="top" secondItem="tYz-lC-ASi" secondAttribute="topMargin" id="3nW-fj-hkM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fJW-On-0Yz" secondAttribute="bottom" id="EdO-Hw-4YR"/>
+                            <constraint firstItem="SCc-ql-1u1" firstAttribute="width" secondItem="tYz-lC-ASi" secondAttribute="width" multiplier="0.917949" id="V7b-OM-UBB"/>
+                            <constraint firstItem="fJW-On-0Yz" firstAttribute="leading" secondItem="tYz-lC-ASi" secondAttribute="leadingMargin" id="q08-sD-4kA"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="763"/>
+                    <connections>
+                        <outlet property="doctorProfilePic" destination="ggb-XL-TzX" id="WsI-Zu-sEa"/>
+                        <outlet property="name" destination="mR9-5h-C3N" id="UMT-t4-i98"/>
+                        <outlet property="nameSwitch" destination="gJ8-13-p33" id="Iog-F3-fPT"/>
+                        <outlet property="rateText" destination="2Kl-N7-qiP" id="cVN-Aa-UY2"/>
+                        <outlet property="rateTitle" destination="AMq-gk-T8v" id="9Yv-Bx-5Pi"/>
+                        <outletCollection property="starButtonCollection" destination="esI-ne-X0Z" collectionClass="NSMutableArray" id="TU6-8y-rNb"/>
+                        <outletCollection property="starButtonCollection" destination="9yg-Kj-RPC" collectionClass="NSMutableArray" id="FU5-km-z2u"/>
+                        <outletCollection property="starButtonCollection" destination="Vso-rM-V6v" collectionClass="NSMutableArray" id="qYd-Vl-uqk"/>
+                        <outletCollection property="starButtonCollection" destination="Ife-6y-hGu" collectionClass="NSMutableArray" id="q7b-mM-OJ3"/>
+                        <outletCollection property="starButtonCollection" destination="sWE-kI-zQ6" collectionClass="NSMutableArray" id="b8Q-5o-ics"/>
+                        <segue destination="WSC-Ab-wnY" kind="presentation" identifier="patientSeeRatings" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="Wjb-eX-dZ1"/>
+                        <segue destination="D4F-R3-olq" kind="presentation" identifier="patientSeeOwnRatings" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="9hW-yr-TQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKd-li-gX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="-37"/>
+        </scene>
+        <!--PatientSeeRatings-->
+        <scene sceneID="rid-S3-r4M">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PatientSeeRatings" referencedIdentifier="PatientSeeRatings" id="WSC-Ab-wnY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RaV-IR-VeV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCA-j2-uGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="-121"/>
+        </scene>
+        <!--PatientSeeOwnRatings-->
+        <scene sceneID="gIS-8o-CkF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PatientSeeOwnRatings" referencedIdentifier="PatientSeeOwnRatings" id="D4F-R3-olq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Svr-sW-Tsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UserDefaultProfilePic" width="256" height="256"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGrey">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="1" green="0.63099998235702515" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

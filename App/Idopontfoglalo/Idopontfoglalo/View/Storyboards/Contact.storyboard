@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Contact" id="Y6W-OH-hqX" customClass="ContactViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MHL-Lw-SQ9">
+                                <rect key="frame" x="20" y="180" width="280" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mz1-XC-cuJ" userLabel="Email">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-Nd-HHb">
+                                                <rect key="frame" x="0.0" y="1" width="40" height="37.5"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9O7-3b-hSd"/>
+                                                    <constraint firstAttribute="width" constant="40" id="eTA-pZ-WPe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROi-7P-Wjt">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <color key="backgroundColor" name="LightRed"/>
+                                                <color key="textColor" name="Black"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGrey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7xV-6x-i3O" userLabel="Phone">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GDk-pC-ljS">
+                                                <rect key="frame" x="0.0" y="0.5" width="40" height="38.5"/>
+                                                <color key="tintColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Oen-pB-fdG"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tON-fj-CJI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-0Q-vRL">
+                                                <rect key="frame" x="70" y="0.0" width="210" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVu-7N-7KE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="Red"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefonszám" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zc4-83-IZ4">
+                                                        <rect key="frame" x="36" y="0.0" width="174" height="40"/>
+                                                        <color key="backgroundColor" name="LightRed"/>
+                                                        <color key="textColor" name="Black"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" name="DarkGrey"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu1-Ry-tpc">
+                                <rect key="frame" x="20" y="300" width="280" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="uVF-jA-8ex"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mentés" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="re5-EZ-CHf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-sA-cTR">
+                                <rect key="frame" x="85" y="10" width="150" height="150"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="H4r-uS-YMc"/>
+                                    <constraint firstAttribute="width" constant="150" id="RbO-w8-jOO"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XSl-yw-WCQ">
+                                <rect key="frame" x="57" y="380" width="206.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Megerősített email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-hn-f7g">
+                                        <rect key="frame" x="0.0" y="15" width="146.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Red"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iRq-rP-kWu">
+                                        <rect key="frame" x="156.5" y="0.0" width="50" height="50"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3XX-VR-lGn"/>
+                                            <constraint firstAttribute="width" constant="50" id="oyU-oA-8vc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC5-LF-FaG">
+                                <rect key="frame" x="76" y="435" width="168.5" height="28.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Megerősítő email küldése">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                    <color key="baseForegroundColor" name="LightRed"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resendVerificationBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="72d-6F-49q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="VC5-LF-FaG" firstAttribute="top" secondItem="XSl-yw-WCQ" secondAttribute="bottom" constant="5" id="6D5-wh-DSV"/>
+                            <constraint firstItem="MHL-Lw-SQ9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6jL-vV-4rf"/>
+                            <constraint firstItem="XSl-yw-WCQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9Lw-kj-OlA"/>
+                            <constraint firstItem="VC5-LF-FaG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ads-Dh-p6O"/>
+                            <constraint firstItem="9Tq-sA-cTR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Ge7-US-Bng"/>
+                            <constraint firstItem="pu1-Ry-tpc" firstAttribute="top" secondItem="MHL-Lw-SQ9" secondAttribute="bottom" constant="30" id="LUi-J3-HZk"/>
+                            <constraint firstItem="9Tq-sA-cTR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Q20-4g-CKH"/>
+                            <constraint firstItem="MHL-Lw-SQ9" firstAttribute="top" secondItem="9Tq-sA-cTR" secondAttribute="bottom" constant="20" id="VLE-55-SDc"/>
+                            <constraint firstItem="XSl-yw-WCQ" firstAttribute="top" secondItem="pu1-Ry-tpc" secondAttribute="bottom" constant="20" id="b0h-49-gng"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pu1-Ry-tpc" secondAttribute="trailing" constant="20" id="eX6-B7-BEm"/>
+                            <constraint firstItem="pu1-Ry-tpc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mqJ-bn-IPC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MHL-Lw-SQ9" secondAttribute="trailing" constant="20" id="tFP-U7-c4Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="9Tq-sA-cTR" id="Ndk-ib-jir"/>
+                        <outlet property="email" destination="ROi-7P-Wjt" id="KmF-0m-elX"/>
+                        <outlet property="emailVerifiedImage" destination="iRq-rP-kWu" id="oeF-od-RR1"/>
+                        <outlet property="phone" destination="zc4-83-IZ4" id="I1E-eO-kik"/>
+                        <outlet property="resendVerificationBtn" destination="VC5-LF-FaG" id="S7y-9p-MaJ"/>
+                        <segue destination="AsB-Ka-dQP" kind="presentation" identifier="toAuth" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="lbX-iW-Qjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="-28.52112676056338"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="mpL-v6-uMi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Login" id="AsB-Ka-dQP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UX9-bF-1f5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGrey">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="1" green="0.63099998235702515" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

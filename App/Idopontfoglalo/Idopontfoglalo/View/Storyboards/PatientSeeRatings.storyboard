@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patient See Ratings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PatientSeeRatings" id="Y6W-OH-hqX" customClass="PatientSeeRatingsViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k8n-0R-jIB">
+                                <rect key="frame" x="0.0" y="45" width="414" height="691"/>
+                                <color key="backgroundColor" name="White"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="88" id="3ud-YL-VPy">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ud-YL-VPy" id="48h-zg-4a4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="QdA-9Y-R0c"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="WY5-be-DDC"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-m4-BpG">
+                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vissza">
+                                    <color key="baseForegroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R3i-iR-2ms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzF-8N-a3F">
+                                <rect key="frame" x="218.33333333333337" y="0.0" width="195.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Diagram megtekintése">
+                                    <color key="baseForegroundColor" name="Red"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="seeChartBtnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iSJ-e0-wNq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="ZOc-m4-BpG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="31d-pt-VKC"/>
+                            <constraint firstItem="k8n-0R-jIB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6z4-W2-Ak2"/>
+                            <constraint firstItem="ZOc-m4-BpG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Jbc-9E-35w"/>
+                            <constraint firstItem="IzF-8N-a3F" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="NHQ-44-qOZ"/>
+                            <constraint firstItem="IzF-8N-a3F" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Zun-XD-Vw2"/>
+                            <constraint firstItem="k8n-0R-jIB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oZo-vO-jdA"/>
+                            <constraint firstItem="k8n-0R-jIB" firstAttribute="top" secondItem="ZOc-m4-BpG" secondAttribute="bottom" constant="10" id="rtJ-wQ-DxY"/>
+                            <constraint firstItem="k8n-0R-jIB" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ycl-pg-Vs7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="k8n-0R-jIB" id="bA4-Ur-x10"/>
+                        <segue destination="xCj-dk-mXL" kind="presentation" identifier="seePieChart" modalTransitionStyle="flipHorizontal" id="fI0-lb-H52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.434782608695656" y="-28.532608695652176"/>
+        </scene>
+        <!--PieChart-->
+        <scene sceneID="sDA-Pt-qbs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PieChart" referencedIdentifier="PieChart" id="xCj-dk-mXL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ve1-XV-tFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

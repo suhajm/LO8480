@@ -1,0 +1,1398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF0C945B29898C820005D162 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0C945A29898C820005D162 /* Patient.storyboard */; };
+		FF0FDA1629A7D17D002CDF47 /* DeleteAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FDA1529A7D17D002CDF47 /* DeleteAccount.storyboard */; };
+		FF0FDA1829A7D4C7002CDF47 /* DeleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FDA1729A7D4C7002CDF47 /* DeleteAccountViewController.swift */; };
+		FF0FDA1A29A7D7F3002CDF47 /* deleteUser.json in Resources */ = {isa = PBXBuildFile; fileRef = FF0FDA1929A7D7F3002CDF47 /* deleteUser.json */; };
+		FF139B2E2922810500BE9063 /* UD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF139B2D2922810500BE9063 /* UD.swift */; };
+		FF149B842902F3D9007BEC2C /* AdminGetDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF149B832902F3D9007BEC2C /* AdminGetDoctorsViewController.swift */; };
+		FF149B862902F499007BEC2C /* AdminTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF149B852902F499007BEC2C /* AdminTabBarController.swift */; };
+		FF149B882902F4BC007BEC2C /* AdminGetPatientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF149B872902F4BC007BEC2C /* AdminGetPatientsViewController.swift */; };
+		FF149B8C29031D3A007BEC2C /* GetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF149B8B29031D3A007BEC2C /* GetUser.swift */; };
+		FF16D700299031E6006F9A4F /* BookedAppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16D6FE299031E6006F9A4F /* BookedAppointmentCell.swift */; };
+		FF16D701299031E6006F9A4F /* BookedAppointmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF16D6FF299031E6006F9A4F /* BookedAppointmentCell.xib */; };
+		FF16D705299036A7006F9A4F /* PatientSeeAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16D704299036A7006F9A4F /* PatientSeeAppointmentsViewController.swift */; };
+		FF16D70729903839006F9A4F /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16D70629903839006F9A4F /* Alerts.swift */; };
+		FF184C8929A9272F007B1A97 /* PatientFilterDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF184C8829A9272F007B1A97 /* PatientFilterDoctors.swift */; };
+		FF293ABC29CF04250082B953 /* AdminAddAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF293ABB29CF04250082B953 /* AdminAddAdminViewController.swift */; };
+		FF293ABE29CF24EE0082B953 /* AdminManageAdminsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF293ABD29CF24ED0082B953 /* AdminManageAdminsViewController.swift */; };
+		FF2F571929995632008C9490 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F571829995632008C9490 /* Rating.swift */; };
+		FF2F571B29995921008C9490 /* DoctorGetRatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F571A29995921008C9490 /* DoctorGetRatingsViewController.swift */; };
+		FF2F571E29995A15008C9490 /* RatingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F571C29995A15008C9490 /* RatingsTableViewCell.swift */; };
+		FF2F571F29995A15008C9490 /* RatingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2F571D29995A15008C9490 /* RatingsTableViewCell.xib */; };
+		FF3C8AB4290EB412004EEA18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C8AB3290EB412004EEA18 /* Constants.swift */; };
+		FF4539BB291FE5B200F2C2DD /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539BA291FE5B200F2C2DD /* PatientViewController.swift */; };
+		FF4539BD291FE5D500F2C2DD /* PatientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539BC291FE5D500F2C2DD /* PatientTabBarController.swift */; };
+		FF4539BF291FE5F700F2C2DD /* PatientGetDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539BE291FE5F700F2C2DD /* PatientGetDoctorsViewController.swift */; };
+		FF4539C1291FE61300F2C2DD /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539C0291FE61300F2C2DD /* PatientHomeViewController.swift */; };
+		FF4539C3291FE62F00F2C2DD /* PatientBookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539C2291FE62F00F2C2DD /* PatientBookAppointmentViewController.swift */; };
+		FF4539C5291FE89700F2C2DD /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539C4291FE89700F2C2DD /* DoctorProfileViewController.swift */; };
+		FF4539C7291FECA500F2C2DD /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539C6291FECA500F2C2DD /* MyProfileViewController.swift */; };
+		FF4539C9291FECC300F2C2DD /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539C8291FECC300F2C2DD /* ChangePasswordViewController.swift */; };
+		FF4539CB291FF2CD00F2C2DD /* GetAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4539CA291FF2CD00F2C2DD /* GetAddress.swift */; };
+		FF47907A29A0E71F00D828EF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47907929A0E71F00D828EF /* Contact.swift */; };
+		FF4B0F0D29B23558004B63B0 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B0F0C29B23558004B63B0 /* PieChartViewController.swift */; };
+		FF4B0F0F29B273D0004B63B0 /* heartrate.json in Resources */ = {isa = PBXBuildFile; fileRef = FF4B0F0E29B273D0004B63B0 /* heartrate.json */; };
+		FF4FE632299FCFCA00548851 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FE631299FCFCA00548851 /* ChangePassword.storyboard */; };
+		FF4FE634299FD3C700548851 /* Personal_Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FE633299FD3C700548851 /* Personal_Information.storyboard */; };
+		FF4FE636299FD55100548851 /* Personal_InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FE635299FD55100548851 /* Personal_InfoViewController.swift */; };
+		FF4FE638299FE59F00548851 /* Address.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FE637299FE59F00548851 /* Address.storyboard */; };
+		FF4FE63A299FE93B00548851 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FE639299FE93B00548851 /* AddressViewController.swift */; };
+		FF4FE63C299FFDB600548851 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4FE63B299FFDB600548851 /* Contact.storyboard */; };
+		FF4FE63E299FFEF000548851 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FE63D299FFEF000548851 /* ContactViewController.swift */; };
+		FF50399E29A5397B007BDD37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF50399D29A5397B007BDD37 /* Kingfisher */; };
+		FF50EFFA2997B63C00C481AB /* Rating.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF50EFF92997B63C00C481AB /* Rating.storyboard */; };
+		FF50EFFC2997BC8E00C481AB /* PatientRateDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50EFFB2997BC8E00C481AB /* PatientRateDoctorViewController.swift */; };
+		FF6D2F3729911D7C00E2D817 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D2F3629911D7C00E2D817 /* DBHelper.swift */; };
+		FF6D2F3929912F5800E2D817 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D2F3829912F5800E2D817 /* ActivityIndicator.swift */; };
+		FF8C612529E07487008A62F2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF8C612429E07487008A62F2 /* IQKeyboardManagerSwift */; };
+		FF94AC1029882B5D00A1E866 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC0F29882B5D00A1E866 /* FirebaseAnalytics */; };
+		FF94AC1229882B5D00A1E866 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1129882B5D00A1E866 /* FirebaseAnalyticsOnDeviceConversion */; };
+		FF94AC1429882B5E00A1E866 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1329882B5E00A1E866 /* FirebaseAnalyticsSwift */; };
+		FF94AC1629882B5E00A1E866 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1529882B5E00A1E866 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		FF94AC1829882B5E00A1E866 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1729882B5E00A1E866 /* FirebaseAppCheck */; };
+		FF94AC1A29882B5E00A1E866 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1929882B5E00A1E866 /* FirebaseAppDistribution-Beta */; };
+		FF94AC1C29882B5E00A1E866 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1B29882B5E00A1E866 /* FirebaseAuth */; };
+		FF94AC1E29882B5E00A1E866 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1D29882B5E00A1E866 /* FirebaseAuthCombine-Community */; };
+		FF94AC2029882B5E00A1E866 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC1F29882B5E00A1E866 /* FirebaseCrashlytics */; };
+		FF94AC2229882B5E00A1E866 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2129882B5E00A1E866 /* FirebaseDatabase */; };
+		FF94AC2429882B5E00A1E866 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2329882B5E00A1E866 /* FirebaseDatabaseSwift */; };
+		FF94AC2629882B5E00A1E866 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2529882B5E00A1E866 /* FirebaseDynamicLinks */; };
+		FF94AC2829882B5E00A1E866 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2729882B5E00A1E866 /* FirebaseFirestore */; };
+		FF94AC2A29882B5E00A1E866 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2929882B5E00A1E866 /* FirebaseFirestoreCombine-Community */; };
+		FF94AC2C29882B5E00A1E866 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2B29882B5E00A1E866 /* FirebaseFirestoreSwift */; };
+		FF94AC2E29882B5E00A1E866 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2D29882B5E00A1E866 /* FirebaseFunctions */; };
+		FF94AC3029882B5E00A1E866 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC2F29882B5E00A1E866 /* FirebaseFunctionsCombine-Community */; };
+		FF94AC3229882B5E00A1E866 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3129882B5E00A1E866 /* FirebaseInAppMessaging-Beta */; };
+		FF94AC3429882B5E00A1E866 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3329882B5E00A1E866 /* FirebaseInAppMessagingSwift-Beta */; };
+		FF94AC3629882B5E00A1E866 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3529882B5E00A1E866 /* FirebaseInstallations */; };
+		FF94AC3829882B5E00A1E866 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3729882B5E00A1E866 /* FirebaseMLModelDownloader */; };
+		FF94AC3A29882B5E00A1E866 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3929882B5E00A1E866 /* FirebaseMessaging */; };
+		FF94AC3C29882B5E00A1E866 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3B29882B5E00A1E866 /* FirebasePerformance */; };
+		FF94AC3E29882B5E00A1E866 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3D29882B5E00A1E866 /* FirebaseRemoteConfig */; };
+		FF94AC4029882B5E00A1E866 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC3F29882B5E00A1E866 /* FirebaseRemoteConfigSwift */; };
+		FF94AC4229882B5E00A1E866 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC4129882B5E00A1E866 /* FirebaseStorage */; };
+		FF94AC4429882B5E00A1E866 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FF94AC4329882B5E00A1E866 /* FirebaseStorageCombine-Community */; };
+		FF94AC482988403F00A1E866 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94AC472988403F00A1E866 /* PatientProfileViewController.swift */; };
+		FF964485299D50FA00C7B4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF964484299D50FA00C7B4CD /* Assets.xcassets */; };
+		FF98B5F528F1936800E85517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B5F428F1936800E85517 /* AppDelegate.swift */; };
+		FF98B5F728F1936800E85517 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B5F628F1936800E85517 /* SceneDelegate.swift */; };
+		FF98B5F928F1936800E85517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B5F828F1936800E85517 /* ViewController.swift */; };
+		FF98B5FC28F1936800E85517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF98B5FA28F1936800E85517 /* Main.storyboard */; };
+		FF98B60128F1936900E85517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF98B5FF28F1936900E85517 /* LaunchScreen.storyboard */; };
+		FF98B60C28F1936900E85517 /* IdopontfoglaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B60B28F1936900E85517 /* IdopontfoglaloTests.swift */; };
+		FF98B61628F1936900E85517 /* IdopontfoglaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B61528F1936900E85517 /* IdopontfoglaloUITests.swift */; };
+		FF98B61828F1936900E85517 /* IdopontfoglaloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B61728F1936900E85517 /* IdopontfoglaloUITestsLaunchTests.swift */; };
+		FF98B62528F194B600E85517 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF98B62428F194B600E85517 /* GoogleService-Info.plist */; };
+		FF98B63E28F1DA7300E85517 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B63D28F1DA7300E85517 /* WelcomeViewController.swift */; };
+		FF98B64028F1DA9300E85517 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B63F28F1DA9300E85517 /* LoginViewController.swift */; };
+		FF98B64228F1DA9C00E85517 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98B64128F1DA9C00E85517 /* RegisterViewController.swift */; };
+		FFAB1EB129B108C800D140D9 /* forgotten_password.json in Resources */ = {isa = PBXBuildFile; fileRef = FFAB1EB029B108C800D140D9 /* forgotten_password.json */; };
+		FFAB1ECD29B1210A00D140D9 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = FFAB1ECC29B1210A00D140D9 /* Algorithms */; };
+		FFAB1ED029B1213400D140D9 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = FFAB1ECF29B1213400D140D9 /* Charts */; };
+		FFAB1ED329B122DF00D140D9 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = FFAB1ED229B122DF00D140D9 /* Numerics */; };
+		FFAB1ED529B1266300D140D9 /* PieChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAB1ED429B1266300D140D9 /* PieChart.storyboard */; };
+		FFB0AA6129897DBF00184DDF /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA6029897DBF00184DDF /* MyProfile.storyboard */; };
+		FFB0AA652989819600184DDF /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA642989819600184DDF /* Admin.storyboard */; };
+		FFB0AA672989836000184DDF /* SeePatient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA662989836000184DDF /* SeePatient.storyboard */; };
+		FFB0AA692989841100184DDF /* SeeDoctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA682989841100184DDF /* SeeDoctor.storyboard */; };
+		FFB0AA6B298988EF00184DDF /* CreateAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA6A298988EF00184DDF /* CreateAppointment.storyboard */; };
+		FFB0AA6D2989892500184DDF /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB0AA6C2989892500184DDF /* Doctor.storyboard */; };
+		FFB9163329169580006E1A63 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163229169580006E1A63 /* DoctorViewController.swift */; };
+		FFB91635291695C5006E1A63 /* DoctorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB91634291695C5006E1A63 /* DoctorTabBarController.swift */; };
+		FFB91637291695F5006E1A63 /* DoctorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB91636291695F5006E1A63 /* DoctorHomeViewController.swift */; };
+		FFB9163929169614006E1A63 /* DoctorAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163829169614006E1A63 /* DoctorAppointmentViewController.swift */; };
+		FFB9163B2916964B006E1A63 /* DoctorCreateAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163A2916964B006E1A63 /* DoctorCreateAppointmentViewController.swift */; };
+		FFB91643291696EF006E1A63 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163C291696EF006E1A63 /* AppointmentCell.swift */; };
+		FFB91644291696EF006E1A63 /* DoctorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163D291696EF006E1A63 /* DoctorCell.swift */; };
+		FFB91645291696EF006E1A63 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163E291696EF006E1A63 /* CalendarCell.swift */; };
+		FFB91646291696EF006E1A63 /* PatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9163F291696EF006E1A63 /* PatientCell.swift */; };
+		FFB91647291696EF006E1A63 /* AppointmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB91640291696EF006E1A63 /* AppointmentCell.xib */; };
+		FFB91648291696EF006E1A63 /* PatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB91641291696EF006E1A63 /* PatientCell.xib */; };
+		FFB91649291696EF006E1A63 /* DoctorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB91642291696EF006E1A63 /* DoctorCell.xib */; };
+		FFB9164B29169715006E1A63 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9164A29169715006E1A63 /* CalendarHelper.swift */; };
+		FFB9164D29169735006E1A63 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9164C29169735006E1A63 /* Appointment.swift */; };
+		FFD180E229A7A879003C54F2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD180E129A7A879003C54F2 /* ResetPasswordViewController.swift */; };
+		FFD1C69F29A622B300343F41 /* UserNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1C69E29A622B300343F41 /* UserNotificationHandler.swift */; };
+		FFD1C6A229A6335000343F41 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FFD1C6A129A6335000343F41 /* Lottie */; };
+		FFD1C6A729A63EA400343F41 /* userInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = FFD1C6A629A63EA400343F41 /* userInfo.json */; };
+		FFD1C6A929A641A800343F41 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = FFD1C6A829A641A800343F41 /* address.json */; };
+		FFD1C6AD29A645FC00343F41 /* password.json in Resources */ = {isa = PBXBuildFile; fileRef = FFD1C6AC29A645FC00343F41 /* password.json */; };
+		FFD1C6AF29A647C500343F41 /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = FFD1C6AE29A647C500343F41 /* contact.json */; };
+		FFE478E829968BAF00DB1531 /* KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE478E729968BAF00DB1531 /* KeyboardHandling.swift */; };
+		FFF89BB3299AA714006D1A01 /* PatientSeeRatings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF89BB2299AA714006D1A01 /* PatientSeeRatings.storyboard */; };
+		FFF89BB5299AA739006D1A01 /* PatientSeeRatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF89BB4299AA739006D1A01 /* PatientSeeRatingsViewController.swift */; };
+		FFF89BB7299AAFAF006D1A01 /* PatientSeeOwnRatings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF89BB6299AAFAF006D1A01 /* PatientSeeOwnRatings.storyboard */; };
+		FFF89BB9299AAFD2006D1A01 /* PatientSeeOwnRatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF89BB8299AAFD2006D1A01 /* PatientSeeOwnRatingsViewController.swift */; };
+		FFF8FCDB29AFDA03005095C4 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = FFF8FCDA29AFDA03005095C4 /* Hero */; };
+		FFF8FCDD29AFDFE0005095C4 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8FCDC29AFDFE0005095C4 /* AnimationViewController.swift */; };
+		FFF8FCDF29AFE273005095C4 /* clock.json in Resources */ = {isa = PBXBuildFile; fileRef = FFF8FCDE29AFE273005095C4 /* clock.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF98B60828F1936900E85517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF98B5E928F1936800E85517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF98B5F028F1936800E85517;
+			remoteInfo = Idopontfoglalo;
+		};
+		FF98B61228F1936900E85517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF98B5E928F1936800E85517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF98B5F028F1936800E85517;
+			remoteInfo = Idopontfoglalo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF0C945A29898C820005D162 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		FF0FDA1529A7D17D002CDF47 /* DeleteAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeleteAccount.storyboard; sourceTree = "<group>"; };
+		FF0FDA1729A7D4C7002CDF47 /* DeleteAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountViewController.swift; sourceTree = "<group>"; };
+		FF0FDA1929A7D7F3002CDF47 /* deleteUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deleteUser.json; sourceTree = "<group>"; };
+		FF139B2D2922810500BE9063 /* UD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UD.swift; sourceTree = "<group>"; };
+		FF149B832902F3D9007BEC2C /* AdminGetDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminGetDoctorsViewController.swift; sourceTree = "<group>"; };
+		FF149B852902F499007BEC2C /* AdminTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarController.swift; sourceTree = "<group>"; };
+		FF149B872902F4BC007BEC2C /* AdminGetPatientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminGetPatientsViewController.swift; sourceTree = "<group>"; };
+		FF149B8B29031D3A007BEC2C /* GetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUser.swift; sourceTree = "<group>"; };
+		FF16D6FE299031E6006F9A4F /* BookedAppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedAppointmentCell.swift; sourceTree = "<group>"; };
+		FF16D6FF299031E6006F9A4F /* BookedAppointmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookedAppointmentCell.xib; sourceTree = "<group>"; };
+		FF16D704299036A7006F9A4F /* PatientSeeAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSeeAppointmentsViewController.swift; sourceTree = "<group>"; };
+		FF16D70629903839006F9A4F /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		FF184C8829A9272F007B1A97 /* PatientFilterDoctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientFilterDoctors.swift; sourceTree = "<group>"; };
+		FF293ABB29CF04250082B953 /* AdminAddAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAddAdminViewController.swift; sourceTree = "<group>"; };
+		FF293ABD29CF24ED0082B953 /* AdminManageAdminsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminManageAdminsViewController.swift; sourceTree = "<group>"; };
+		FF2F571829995632008C9490 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		FF2F571A29995921008C9490 /* DoctorGetRatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorGetRatingsViewController.swift; sourceTree = "<group>"; };
+		FF2F571C29995A15008C9490 /* RatingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsTableViewCell.swift; sourceTree = "<group>"; };
+		FF2F571D29995A15008C9490 /* RatingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingsTableViewCell.xib; sourceTree = "<group>"; };
+		FF3C8AB3290EB412004EEA18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF4539BA291FE5B200F2C2DD /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		FF4539BC291FE5D500F2C2DD /* PatientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabBarController.swift; sourceTree = "<group>"; };
+		FF4539BE291FE5F700F2C2DD /* PatientGetDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientGetDoctorsViewController.swift; sourceTree = "<group>"; };
+		FF4539C0291FE61300F2C2DD /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
+		FF4539C2291FE62F00F2C2DD /* PatientBookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientBookAppointmentViewController.swift; sourceTree = "<group>"; };
+		FF4539C4291FE89700F2C2DD /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
+		FF4539C6291FECA500F2C2DD /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		FF4539C8291FECC300F2C2DD /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		FF4539CA291FF2CD00F2C2DD /* GetAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAddress.swift; sourceTree = "<group>"; };
+		FF46B12D299EB2E900822444 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Main.strings; sourceTree = "<group>"; };
+		FF46B12E299EB2EA00822444 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FF47907929A0E71F00D828EF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		FF4B0F0C29B23558004B63B0 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		FF4B0F0E29B273D0004B63B0 /* heartrate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartrate.json; sourceTree = "<group>"; };
+		FF4FE631299FCFCA00548851 /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
+		FF4FE633299FD3C700548851 /* Personal_Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Personal_Information.storyboard; sourceTree = "<group>"; };
+		FF4FE635299FD55100548851 /* Personal_InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_InfoViewController.swift; sourceTree = "<group>"; };
+		FF4FE637299FE59F00548851 /* Address.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Address.storyboard; sourceTree = "<group>"; };
+		FF4FE639299FE93B00548851 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		FF4FE63B299FFDB600548851 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		FF4FE63D299FFEF000548851 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FF50EFF92997B63C00C481AB /* Rating.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rating.storyboard; sourceTree = "<group>"; };
+		FF50EFFB2997BC8E00C481AB /* PatientRateDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRateDoctorViewController.swift; sourceTree = "<group>"; };
+		FF6D2F3629911D7C00E2D817 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		FF6D2F3829912F5800E2D817 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FF94AC472988403F00A1E866 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
+		FF964484299D50FA00C7B4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF98B5F128F1936800E85517 /* Idopontfoglalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idopontfoglalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF98B5F428F1936800E85517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF98B5F628F1936800E85517 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF98B5F828F1936800E85517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF98B5FB28F1936800E85517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF98B60028F1936900E85517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF98B60228F1936900E85517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF98B60728F1936900E85517 /* IdopontfoglaloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdopontfoglaloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF98B60B28F1936900E85517 /* IdopontfoglaloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdopontfoglaloTests.swift; sourceTree = "<group>"; };
+		FF98B61128F1936900E85517 /* IdopontfoglaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdopontfoglaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF98B61528F1936900E85517 /* IdopontfoglaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdopontfoglaloUITests.swift; sourceTree = "<group>"; };
+		FF98B61728F1936900E85517 /* IdopontfoglaloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdopontfoglaloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF98B62428F194B600E85517 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF98B63D28F1DA7300E85517 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FF98B63F28F1DA9300E85517 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FF98B64128F1DA9C00E85517 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FFAB1EB029B108C800D140D9 /* forgotten_password.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forgotten_password.json; sourceTree = "<group>"; };
+		FFAB1ED429B1266300D140D9 /* PieChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChart.storyboard; sourceTree = "<group>"; };
+		FFB0AA6029897DBF00184DDF /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		FFB0AA642989819600184DDF /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
+		FFB0AA662989836000184DDF /* SeePatient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeePatient.storyboard; sourceTree = "<group>"; };
+		FFB0AA682989841100184DDF /* SeeDoctor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeeDoctor.storyboard; sourceTree = "<group>"; };
+		FFB0AA6A298988EF00184DDF /* CreateAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAppointment.storyboard; sourceTree = "<group>"; };
+		FFB0AA6C2989892500184DDF /* Doctor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Doctor.storyboard; sourceTree = "<group>"; };
+		FFB9163229169580006E1A63 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		FFB91634291695C5006E1A63 /* DoctorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTabBarController.swift; sourceTree = "<group>"; };
+		FFB91636291695F5006E1A63 /* DoctorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorHomeViewController.swift; sourceTree = "<group>"; };
+		FFB9163829169614006E1A63 /* DoctorAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppointmentViewController.swift; sourceTree = "<group>"; };
+		FFB9163A2916964B006E1A63 /* DoctorCreateAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCreateAppointmentViewController.swift; sourceTree = "<group>"; };
+		FFB9163C291696EF006E1A63 /* AppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		FFB9163D291696EF006E1A63 /* DoctorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
+		FFB9163E291696EF006E1A63 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		FFB9163F291696EF006E1A63 /* PatientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientCell.swift; sourceTree = "<group>"; };
+		FFB91640291696EF006E1A63 /* AppointmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppointmentCell.xib; sourceTree = "<group>"; };
+		FFB91641291696EF006E1A63 /* PatientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientCell.xib; sourceTree = "<group>"; };
+		FFB91642291696EF006E1A63 /* DoctorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorCell.xib; sourceTree = "<group>"; };
+		FFB9164A29169715006E1A63 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		FFB9164C29169735006E1A63 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		FFD180E129A7A879003C54F2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		FFD1C69E29A622B300343F41 /* UserNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationHandler.swift; sourceTree = "<group>"; };
+		FFD1C6A629A63EA400343F41 /* userInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userInfo.json; sourceTree = "<group>"; };
+		FFD1C6A829A641A800343F41 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
+		FFD1C6AC29A645FC00343F41 /* password.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = password.json; sourceTree = "<group>"; };
+		FFD1C6AE29A647C500343F41 /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
+		FFE478E729968BAF00DB1531 /* KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandling.swift; sourceTree = "<group>"; };
+		FFF89BB2299AA714006D1A01 /* PatientSeeRatings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientSeeRatings.storyboard; sourceTree = "<group>"; };
+		FFF89BB4299AA739006D1A01 /* PatientSeeRatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSeeRatingsViewController.swift; sourceTree = "<group>"; };
+		FFF89BB6299AAFAF006D1A01 /* PatientSeeOwnRatings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientSeeOwnRatings.storyboard; sourceTree = "<group>"; };
+		FFF89BB8299AAFD2006D1A01 /* PatientSeeOwnRatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSeeOwnRatingsViewController.swift; sourceTree = "<group>"; };
+		FFF8FCDC29AFDFE0005095C4 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		FFF8FCDE29AFE273005095C4 /* clock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clock.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF98B5EE28F1936800E85517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF94AC2229882B5E00A1E866 /* FirebaseDatabase in Frameworks */,
+				FF94AC3029882B5E00A1E866 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				FF94AC2829882B5E00A1E866 /* FirebaseFirestore in Frameworks */,
+				FF94AC1429882B5E00A1E866 /* FirebaseAnalyticsSwift in Frameworks */,
+				FFAB1ED329B122DF00D140D9 /* Numerics in Frameworks */,
+				FFAB1ECD29B1210A00D140D9 /* Algorithms in Frameworks */,
+				FF94AC1029882B5D00A1E866 /* FirebaseAnalytics in Frameworks */,
+				FF94AC1229882B5D00A1E866 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				FF94AC3829882B5E00A1E866 /* FirebaseMLModelDownloader in Frameworks */,
+				FF94AC2C29882B5E00A1E866 /* FirebaseFirestoreSwift in Frameworks */,
+				FF94AC1829882B5E00A1E866 /* FirebaseAppCheck in Frameworks */,
+				FFD1C6A229A6335000343F41 /* Lottie in Frameworks */,
+				FF94AC1629882B5E00A1E866 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				FF94AC1C29882B5E00A1E866 /* FirebaseAuth in Frameworks */,
+				FF94AC2029882B5E00A1E866 /* FirebaseCrashlytics in Frameworks */,
+				FF94AC4029882B5E00A1E866 /* FirebaseRemoteConfigSwift in Frameworks */,
+				FFAB1ED029B1213400D140D9 /* Charts in Frameworks */,
+				FF94AC3229882B5E00A1E866 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				FF94AC2429882B5E00A1E866 /* FirebaseDatabaseSwift in Frameworks */,
+				FF94AC2E29882B5E00A1E866 /* FirebaseFunctions in Frameworks */,
+				FF50399E29A5397B007BDD37 /* Kingfisher in Frameworks */,
+				FF8C612529E07487008A62F2 /* IQKeyboardManagerSwift in Frameworks */,
+				FF94AC4429882B5E00A1E866 /* FirebaseStorageCombine-Community in Frameworks */,
+				FF94AC3E29882B5E00A1E866 /* FirebaseRemoteConfig in Frameworks */,
+				FF94AC1A29882B5E00A1E866 /* FirebaseAppDistribution-Beta in Frameworks */,
+				FFF8FCDB29AFDA03005095C4 /* Hero in Frameworks */,
+				FF94AC1E29882B5E00A1E866 /* FirebaseAuthCombine-Community in Frameworks */,
+				FF94AC3C29882B5E00A1E866 /* FirebasePerformance in Frameworks */,
+				FF94AC3429882B5E00A1E866 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				FF94AC4229882B5E00A1E866 /* FirebaseStorage in Frameworks */,
+				FF94AC2629882B5E00A1E866 /* FirebaseDynamicLinks in Frameworks */,
+				FF94AC2A29882B5E00A1E866 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				FF94AC3A29882B5E00A1E866 /* FirebaseMessaging in Frameworks */,
+				FF94AC3629882B5E00A1E866 /* FirebaseInstallations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60428F1936900E85517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60E28F1936900E85517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF8C612329E07487008A62F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF98B5E828F1936800E85517 = {
+			isa = PBXGroup;
+			children = (
+				FF98B5F328F1936800E85517 /* Idopontfoglalo */,
+				FF98B60A28F1936900E85517 /* IdopontfoglaloTests */,
+				FF98B61428F1936900E85517 /* IdopontfoglaloUITests */,
+				FF98B5F228F1936800E85517 /* Products */,
+				FF8C612329E07487008A62F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF98B5F228F1936800E85517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B5F128F1936800E85517 /* Idopontfoglalo.app */,
+				FF98B60728F1936900E85517 /* IdopontfoglaloTests.xctest */,
+				FF98B61128F1936900E85517 /* IdopontfoglaloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF98B5F328F1936800E85517 /* Idopontfoglalo */ = {
+			isa = PBXGroup;
+			children = (
+				FFD1C6A329A634AB00343F41 /* Assets */,
+				FF98B62D28F1992000E85517 /* Model */,
+				FF98B62E28F1992500E85517 /* Controller */,
+				FF98B62F28F1993300E85517 /* View */,
+				FF98B5F428F1936800E85517 /* AppDelegate.swift */,
+				FF98B5F628F1936800E85517 /* SceneDelegate.swift */,
+				FF98B5F828F1936800E85517 /* ViewController.swift */,
+				FF98B60228F1936900E85517 /* Info.plist */,
+				FF98B62428F194B600E85517 /* GoogleService-Info.plist */,
+				FF98B63828F19B0500E85517 /* Supporting Files */,
+			);
+			path = Idopontfoglalo;
+			sourceTree = "<group>";
+		};
+		FF98B60A28F1936900E85517 /* IdopontfoglaloTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B60B28F1936900E85517 /* IdopontfoglaloTests.swift */,
+			);
+			path = IdopontfoglaloTests;
+			sourceTree = "<group>";
+		};
+		FF98B61428F1936900E85517 /* IdopontfoglaloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B61528F1936900E85517 /* IdopontfoglaloUITests.swift */,
+				FF98B61728F1936900E85517 /* IdopontfoglaloUITestsLaunchTests.swift */,
+			);
+			path = IdopontfoglaloUITests;
+			sourceTree = "<group>";
+		};
+		FF98B62D28F1992000E85517 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF149B8B29031D3A007BEC2C /* GetUser.swift */,
+				FFB9164C29169735006E1A63 /* Appointment.swift */,
+				FF4539CA291FF2CD00F2C2DD /* GetAddress.swift */,
+				FF2F571829995632008C9490 /* Rating.swift */,
+				FF47907929A0E71F00D828EF /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF98B62E28F1992500E85517 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B63328F1996000E85517 /* Admin */,
+				FF98B63228F1995600E85517 /* Common */,
+				FF98B63128F1995100E85517 /* Doctor */,
+				FF98B63028F1994C00E85517 /* Patient */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF98B62F28F1993300E85517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0AA5F29897D8800184DDF /* Storyboards */,
+				FFB9163C291696EF006E1A63 /* AppointmentCell.swift */,
+				FFB91640291696EF006E1A63 /* AppointmentCell.xib */,
+				FFB9163E291696EF006E1A63 /* CalendarCell.swift */,
+				FFB9163D291696EF006E1A63 /* DoctorCell.swift */,
+				FFB91642291696EF006E1A63 /* DoctorCell.xib */,
+				FFB9163F291696EF006E1A63 /* PatientCell.swift */,
+				FFB91641291696EF006E1A63 /* PatientCell.xib */,
+				FF16D6FE299031E6006F9A4F /* BookedAppointmentCell.swift */,
+				FF16D6FF299031E6006F9A4F /* BookedAppointmentCell.xib */,
+				FF2F571C29995A15008C9490 /* RatingsTableViewCell.swift */,
+				FF2F571D29995A15008C9490 /* RatingsTableViewCell.xib */,
+				FF184C8829A9272F007B1A97 /* PatientFilterDoctors.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF98B63028F1994C00E85517 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				FF4539BA291FE5B200F2C2DD /* PatientViewController.swift */,
+				FF4539BC291FE5D500F2C2DD /* PatientTabBarController.swift */,
+				FF4539BE291FE5F700F2C2DD /* PatientGetDoctorsViewController.swift */,
+				FF4539C0291FE61300F2C2DD /* PatientHomeViewController.swift */,
+				FF4539C2291FE62F00F2C2DD /* PatientBookAppointmentViewController.swift */,
+				FF16D704299036A7006F9A4F /* PatientSeeAppointmentsViewController.swift */,
+				FF50EFFB2997BC8E00C481AB /* PatientRateDoctorViewController.swift */,
+				FFF89BB4299AA739006D1A01 /* PatientSeeRatingsViewController.swift */,
+				FFF89BB8299AAFD2006D1A01 /* PatientSeeOwnRatingsViewController.swift */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		FF98B63128F1995100E85517 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9163229169580006E1A63 /* DoctorViewController.swift */,
+				FFB91634291695C5006E1A63 /* DoctorTabBarController.swift */,
+				FFB91636291695F5006E1A63 /* DoctorHomeViewController.swift */,
+				FFB9163829169614006E1A63 /* DoctorAppointmentViewController.swift */,
+				FFB9163A2916964B006E1A63 /* DoctorCreateAppointmentViewController.swift */,
+				FF2F571A29995921008C9490 /* DoctorGetRatingsViewController.swift */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		FF98B63228F1995600E85517 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B63D28F1DA7300E85517 /* WelcomeViewController.swift */,
+				FF98B63F28F1DA9300E85517 /* LoginViewController.swift */,
+				FF98B64128F1DA9C00E85517 /* RegisterViewController.swift */,
+				FF4539C4291FE89700F2C2DD /* DoctorProfileViewController.swift */,
+				FF4539C6291FECA500F2C2DD /* MyProfileViewController.swift */,
+				FF4539C8291FECC300F2C2DD /* ChangePasswordViewController.swift */,
+				FF94AC472988403F00A1E866 /* PatientProfileViewController.swift */,
+				FF4FE635299FD55100548851 /* Personal_InfoViewController.swift */,
+				FF4FE639299FE93B00548851 /* AddressViewController.swift */,
+				FF4FE63D299FFEF000548851 /* ContactViewController.swift */,
+				FFD180E129A7A879003C54F2 /* ResetPasswordViewController.swift */,
+				FF0FDA1729A7D4C7002CDF47 /* DeleteAccountViewController.swift */,
+				FFF8FCDC29AFDFE0005095C4 /* AnimationViewController.swift */,
+				FF4B0F0C29B23558004B63B0 /* PieChartViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF98B63328F1996000E85517 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				FF149B832902F3D9007BEC2C /* AdminGetDoctorsViewController.swift */,
+				FF149B852902F499007BEC2C /* AdminTabBarController.swift */,
+				FF149B872902F4BC007BEC2C /* AdminGetPatientsViewController.swift */,
+				FF293ABB29CF04250082B953 /* AdminAddAdminViewController.swift */,
+				FF293ABD29CF24ED0082B953 /* AdminManageAdminsViewController.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		FF98B63828F19B0500E85517 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C8AB3290EB412004EEA18 /* Constants.swift */,
+				FFB9164A29169715006E1A63 /* CalendarHelper.swift */,
+				FF139B2D2922810500BE9063 /* UD.swift */,
+				FF16D70629903839006F9A4F /* Alerts.swift */,
+				FF6D2F3629911D7C00E2D817 /* DBHelper.swift */,
+				FF6D2F3829912F5800E2D817 /* ActivityIndicator.swift */,
+				FFE478E729968BAF00DB1531 /* KeyboardHandling.swift */,
+				FFD1C69E29A622B300343F41 /* UserNotificationHandler.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB0AA5F29897D8800184DDF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FF98B5FA28F1936800E85517 /* Main.storyboard */,
+				FF98B5FF28F1936900E85517 /* LaunchScreen.storyboard */,
+				FFB0AA6029897DBF00184DDF /* MyProfile.storyboard */,
+				FFB0AA642989819600184DDF /* Admin.storyboard */,
+				FFB0AA662989836000184DDF /* SeePatient.storyboard */,
+				FFB0AA682989841100184DDF /* SeeDoctor.storyboard */,
+				FFB0AA6A298988EF00184DDF /* CreateAppointment.storyboard */,
+				FFB0AA6C2989892500184DDF /* Doctor.storyboard */,
+				FF0C945A29898C820005D162 /* Patient.storyboard */,
+				FF50EFF92997B63C00C481AB /* Rating.storyboard */,
+				FFF89BB2299AA714006D1A01 /* PatientSeeRatings.storyboard */,
+				FFF89BB6299AAFAF006D1A01 /* PatientSeeOwnRatings.storyboard */,
+				FF4FE631299FCFCA00548851 /* ChangePassword.storyboard */,
+				FF4FE633299FD3C700548851 /* Personal_Information.storyboard */,
+				FF4FE637299FE59F00548851 /* Address.storyboard */,
+				FF4FE63B299FFDB600548851 /* Contact.storyboard */,
+				FF0FDA1529A7D17D002CDF47 /* DeleteAccount.storyboard */,
+				FFAB1ED429B1266300D140D9 /* PieChart.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFD1C6A329A634AB00343F41 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF964484299D50FA00C7B4CD /* Assets.xcassets */,
+				FFD1C6A829A641A800343F41 /* address.json */,
+				FFD1C6A629A63EA400343F41 /* userInfo.json */,
+				FFF8FCDE29AFE273005095C4 /* clock.json */,
+				FFAB1EB029B108C800D140D9 /* forgotten_password.json */,
+				FF4B0F0E29B273D0004B63B0 /* heartrate.json */,
+				FFD1C6AC29A645FC00343F41 /* password.json */,
+				FFD1C6AE29A647C500343F41 /* contact.json */,
+				FF0FDA1929A7D7F3002CDF47 /* deleteUser.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF98B5F028F1936800E85517 /* Idopontfoglalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF98B61B28F1936900E85517 /* Build configuration list for PBXNativeTarget "Idopontfoglalo" */;
+			buildPhases = (
+				FF98B5ED28F1936800E85517 /* Sources */,
+				FF98B5EE28F1936800E85517 /* Frameworks */,
+				FF98B5EF28F1936800E85517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Idopontfoglalo;
+			packageProductDependencies = (
+				FF94AC0F29882B5D00A1E866 /* FirebaseAnalytics */,
+				FF94AC1129882B5D00A1E866 /* FirebaseAnalyticsOnDeviceConversion */,
+				FF94AC1329882B5E00A1E866 /* FirebaseAnalyticsSwift */,
+				FF94AC1529882B5E00A1E866 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				FF94AC1729882B5E00A1E866 /* FirebaseAppCheck */,
+				FF94AC1929882B5E00A1E866 /* FirebaseAppDistribution-Beta */,
+				FF94AC1B29882B5E00A1E866 /* FirebaseAuth */,
+				FF94AC1D29882B5E00A1E866 /* FirebaseAuthCombine-Community */,
+				FF94AC1F29882B5E00A1E866 /* FirebaseCrashlytics */,
+				FF94AC2129882B5E00A1E866 /* FirebaseDatabase */,
+				FF94AC2329882B5E00A1E866 /* FirebaseDatabaseSwift */,
+				FF94AC2529882B5E00A1E866 /* FirebaseDynamicLinks */,
+				FF94AC2729882B5E00A1E866 /* FirebaseFirestore */,
+				FF94AC2929882B5E00A1E866 /* FirebaseFirestoreCombine-Community */,
+				FF94AC2B29882B5E00A1E866 /* FirebaseFirestoreSwift */,
+				FF94AC2D29882B5E00A1E866 /* FirebaseFunctions */,
+				FF94AC2F29882B5E00A1E866 /* FirebaseFunctionsCombine-Community */,
+				FF94AC3129882B5E00A1E866 /* FirebaseInAppMessaging-Beta */,
+				FF94AC3329882B5E00A1E866 /* FirebaseInAppMessagingSwift-Beta */,
+				FF94AC3529882B5E00A1E866 /* FirebaseInstallations */,
+				FF94AC3729882B5E00A1E866 /* FirebaseMLModelDownloader */,
+				FF94AC3929882B5E00A1E866 /* FirebaseMessaging */,
+				FF94AC3B29882B5E00A1E866 /* FirebasePerformance */,
+				FF94AC3D29882B5E00A1E866 /* FirebaseRemoteConfig */,
+				FF94AC3F29882B5E00A1E866 /* FirebaseRemoteConfigSwift */,
+				FF94AC4129882B5E00A1E866 /* FirebaseStorage */,
+				FF94AC4329882B5E00A1E866 /* FirebaseStorageCombine-Community */,
+				FF50399D29A5397B007BDD37 /* Kingfisher */,
+				FFD1C6A129A6335000343F41 /* Lottie */,
+				FFF8FCDA29AFDA03005095C4 /* Hero */,
+				FFAB1ECC29B1210A00D140D9 /* Algorithms */,
+				FFAB1ECF29B1213400D140D9 /* Charts */,
+				FFAB1ED229B122DF00D140D9 /* Numerics */,
+				FF8C612429E07487008A62F2 /* IQKeyboardManagerSwift */,
+			);
+			productName = Idopontfoglalo;
+			productReference = FF98B5F128F1936800E85517 /* Idopontfoglalo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF98B60628F1936900E85517 /* IdopontfoglaloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF98B61E28F1936900E85517 /* Build configuration list for PBXNativeTarget "IdopontfoglaloTests" */;
+			buildPhases = (
+				FF98B60328F1936900E85517 /* Sources */,
+				FF98B60428F1936900E85517 /* Frameworks */,
+				FF98B60528F1936900E85517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF98B60928F1936900E85517 /* PBXTargetDependency */,
+			);
+			name = IdopontfoglaloTests;
+			productName = IdopontfoglaloTests;
+			productReference = FF98B60728F1936900E85517 /* IdopontfoglaloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF98B61028F1936900E85517 /* IdopontfoglaloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF98B62128F1936900E85517 /* Build configuration list for PBXNativeTarget "IdopontfoglaloUITests" */;
+			buildPhases = (
+				FF98B60D28F1936900E85517 /* Sources */,
+				FF98B60E28F1936900E85517 /* Frameworks */,
+				FF98B60F28F1936900E85517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF98B61328F1936900E85517 /* PBXTargetDependency */,
+			);
+			name = IdopontfoglaloUITests;
+			productName = IdopontfoglaloUITests;
+			productReference = FF98B61128F1936900E85517 /* IdopontfoglaloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF98B5E928F1936800E85517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FF98B5F028F1936800E85517 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					FF98B60628F1936900E85517 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = FF98B5F028F1936800E85517;
+					};
+					FF98B61028F1936900E85517 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = FF98B5F028F1936800E85517;
+					};
+				};
+			};
+			buildConfigurationList = FF98B5EC28F1936800E85517 /* Build configuration list for PBXProject "Idopontfoglalo 2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				hu,
+			);
+			mainGroup = FF98B5E828F1936800E85517;
+			packageReferences = (
+				FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FF50399C29A5397B007BDD37 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FFD1C6A029A6335000343F41 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				FFD1C6B329A697C400343F41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				FFF8FCD929AFDA03005095C4 /* XCRemoteSwiftPackageReference "Hero" */,
+				FFAB1ECB29B1210A00D140D9 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				FFAB1ECE29B1213400D140D9 /* XCRemoteSwiftPackageReference "Charts" */,
+				FFAB1ED129B122DF00D140D9 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
+			productRefGroup = FF98B5F228F1936800E85517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF98B5F028F1936800E85517 /* Idopontfoglalo */,
+				FF98B60628F1936900E85517 /* IdopontfoglaloTests */,
+				FF98B61028F1936900E85517 /* IdopontfoglaloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF98B5EF28F1936800E85517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B0F0F29B273D0004B63B0 /* heartrate.json in Resources */,
+				FFD1C6A729A63EA400343F41 /* userInfo.json in Resources */,
+				FF0C945B29898C820005D162 /* Patient.storyboard in Resources */,
+				FFAB1EB129B108C800D140D9 /* forgotten_password.json in Resources */,
+				FFD1C6AD29A645FC00343F41 /* password.json in Resources */,
+				FFB0AA672989836000184DDF /* SeePatient.storyboard in Resources */,
+				FF98B60128F1936900E85517 /* LaunchScreen.storyboard in Resources */,
+				FFB0AA6D2989892500184DDF /* Doctor.storyboard in Resources */,
+				FFB91648291696EF006E1A63 /* PatientCell.xib in Resources */,
+				FF0FDA1629A7D17D002CDF47 /* DeleteAccount.storyboard in Resources */,
+				FFF8FCDF29AFE273005095C4 /* clock.json in Resources */,
+				FFF89BB3299AA714006D1A01 /* PatientSeeRatings.storyboard in Resources */,
+				FFB0AA6129897DBF00184DDF /* MyProfile.storyboard in Resources */,
+				FF4FE638299FE59F00548851 /* Address.storyboard in Resources */,
+				FF2F571F29995A15008C9490 /* RatingsTableViewCell.xib in Resources */,
+				FF98B62528F194B600E85517 /* GoogleService-Info.plist in Resources */,
+				FFF89BB7299AAFAF006D1A01 /* PatientSeeOwnRatings.storyboard in Resources */,
+				FFB91649291696EF006E1A63 /* DoctorCell.xib in Resources */,
+				FF4FE63C299FFDB600548851 /* Contact.storyboard in Resources */,
+				FFD1C6AF29A647C500343F41 /* contact.json in Resources */,
+				FFB0AA692989841100184DDF /* SeeDoctor.storyboard in Resources */,
+				FF4FE634299FD3C700548851 /* Personal_Information.storyboard in Resources */,
+				FF4FE632299FCFCA00548851 /* ChangePassword.storyboard in Resources */,
+				FF98B5FC28F1936800E85517 /* Main.storyboard in Resources */,
+				FF964485299D50FA00C7B4CD /* Assets.xcassets in Resources */,
+				FFB0AA652989819600184DDF /* Admin.storyboard in Resources */,
+				FF16D701299031E6006F9A4F /* BookedAppointmentCell.xib in Resources */,
+				FFAB1ED529B1266300D140D9 /* PieChart.storyboard in Resources */,
+				FFD1C6A929A641A800343F41 /* address.json in Resources */,
+				FF50EFFA2997B63C00C481AB /* Rating.storyboard in Resources */,
+				FF0FDA1A29A7D7F3002CDF47 /* deleteUser.json in Resources */,
+				FFB0AA6B298988EF00184DDF /* CreateAppointment.storyboard in Resources */,
+				FFB91647291696EF006E1A63 /* AppointmentCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60528F1936900E85517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60F28F1936900E85517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF98B5ED28F1936800E85517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF47907A29A0E71F00D828EF /* Contact.swift in Sources */,
+				FF2F571E29995A15008C9490 /* RatingsTableViewCell.swift in Sources */,
+				FF4539C7291FECA500F2C2DD /* MyProfileViewController.swift in Sources */,
+				FF4539C1291FE61300F2C2DD /* PatientHomeViewController.swift in Sources */,
+				FF98B64028F1DA9300E85517 /* LoginViewController.swift in Sources */,
+				FF98B5F928F1936800E85517 /* ViewController.swift in Sources */,
+				FF6D2F3929912F5800E2D817 /* ActivityIndicator.swift in Sources */,
+				FF4539BB291FE5B200F2C2DD /* PatientViewController.swift in Sources */,
+				FF98B64228F1DA9C00E85517 /* RegisterViewController.swift in Sources */,
+				FF4539BD291FE5D500F2C2DD /* PatientTabBarController.swift in Sources */,
+				FF293ABC29CF04250082B953 /* AdminAddAdminViewController.swift in Sources */,
+				FFF89BB5299AA739006D1A01 /* PatientSeeRatingsViewController.swift in Sources */,
+				FF149B8C29031D3A007BEC2C /* GetUser.swift in Sources */,
+				FFB91644291696EF006E1A63 /* DoctorCell.swift in Sources */,
+				FF149B862902F499007BEC2C /* AdminTabBarController.swift in Sources */,
+				FF16D705299036A7006F9A4F /* PatientSeeAppointmentsViewController.swift in Sources */,
+				FF2F571B29995921008C9490 /* DoctorGetRatingsViewController.swift in Sources */,
+				FF3C8AB4290EB412004EEA18 /* Constants.swift in Sources */,
+				FF0FDA1829A7D4C7002CDF47 /* DeleteAccountViewController.swift in Sources */,
+				FFB9164B29169715006E1A63 /* CalendarHelper.swift in Sources */,
+				FF4539C9291FECC300F2C2DD /* ChangePasswordViewController.swift in Sources */,
+				FF184C8929A9272F007B1A97 /* PatientFilterDoctors.swift in Sources */,
+				FFB9163929169614006E1A63 /* DoctorAppointmentViewController.swift in Sources */,
+				FFD1C69F29A622B300343F41 /* UserNotificationHandler.swift in Sources */,
+				FF4FE63E299FFEF000548851 /* ContactViewController.swift in Sources */,
+				FFE478E829968BAF00DB1531 /* KeyboardHandling.swift in Sources */,
+				FF4539C5291FE89700F2C2DD /* DoctorProfileViewController.swift in Sources */,
+				FFB9164D29169735006E1A63 /* Appointment.swift in Sources */,
+				FF4B0F0D29B23558004B63B0 /* PieChartViewController.swift in Sources */,
+				FFB91643291696EF006E1A63 /* AppointmentCell.swift in Sources */,
+				FF4539CB291FF2CD00F2C2DD /* GetAddress.swift in Sources */,
+				FF98B63E28F1DA7300E85517 /* WelcomeViewController.swift in Sources */,
+				FF50EFFC2997BC8E00C481AB /* PatientRateDoctorViewController.swift in Sources */,
+				FF16D70729903839006F9A4F /* Alerts.swift in Sources */,
+				FFF8FCDD29AFDFE0005095C4 /* AnimationViewController.swift in Sources */,
+				FFF89BB9299AAFD2006D1A01 /* PatientSeeOwnRatingsViewController.swift in Sources */,
+				FFB91635291695C5006E1A63 /* DoctorTabBarController.swift in Sources */,
+				FF139B2E2922810500BE9063 /* UD.swift in Sources */,
+				FF149B842902F3D9007BEC2C /* AdminGetDoctorsViewController.swift in Sources */,
+				FF4FE63A299FE93B00548851 /* AddressViewController.swift in Sources */,
+				FFB9163329169580006E1A63 /* DoctorViewController.swift in Sources */,
+				FFB91637291695F5006E1A63 /* DoctorHomeViewController.swift in Sources */,
+				FF4FE636299FD55100548851 /* Personal_InfoViewController.swift in Sources */,
+				FF16D700299031E6006F9A4F /* BookedAppointmentCell.swift in Sources */,
+				FF293ABE29CF24EE0082B953 /* AdminManageAdminsViewController.swift in Sources */,
+				FFD180E229A7A879003C54F2 /* ResetPasswordViewController.swift in Sources */,
+				FFB91646291696EF006E1A63 /* PatientCell.swift in Sources */,
+				FFB9163B2916964B006E1A63 /* DoctorCreateAppointmentViewController.swift in Sources */,
+				FF94AC482988403F00A1E866 /* PatientProfileViewController.swift in Sources */,
+				FF4539BF291FE5F700F2C2DD /* PatientGetDoctorsViewController.swift in Sources */,
+				FF98B5F528F1936800E85517 /* AppDelegate.swift in Sources */,
+				FF2F571929995632008C9490 /* Rating.swift in Sources */,
+				FF4539C3291FE62F00F2C2DD /* PatientBookAppointmentViewController.swift in Sources */,
+				FF6D2F3729911D7C00E2D817 /* DBHelper.swift in Sources */,
+				FF149B882902F4BC007BEC2C /* AdminGetPatientsViewController.swift in Sources */,
+				FF98B5F728F1936800E85517 /* SceneDelegate.swift in Sources */,
+				FFB91645291696EF006E1A63 /* CalendarCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60328F1936900E85517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF98B60C28F1936900E85517 /* IdopontfoglaloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF98B60D28F1936900E85517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF98B61628F1936900E85517 /* IdopontfoglaloUITests.swift in Sources */,
+				FF98B61828F1936900E85517 /* IdopontfoglaloUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF98B60928F1936900E85517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF98B5F028F1936800E85517 /* Idopontfoglalo */;
+			targetProxy = FF98B60828F1936900E85517 /* PBXContainerItemProxy */;
+		};
+		FF98B61328F1936900E85517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF98B5F028F1936800E85517 /* Idopontfoglalo */;
+			targetProxy = FF98B61228F1936900E85517 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF98B5FA28F1936800E85517 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF98B5FB28F1936800E85517 /* Base */,
+				FF46B12D299EB2E900822444 /* hu */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF98B5FF28F1936900E85517 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF98B60028F1936900E85517 /* Base */,
+				FF46B12E299EB2EA00822444 /* hu */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF98B61928F1936900E85517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF98B61A28F1936900E85517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF98B61C28F1936900E85517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Idopontfoglalo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MedConnect;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.szakdolgozat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF98B61D28F1936900E85517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Idopontfoglalo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MedConnect;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.szakdolgozat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF98B61F28F1936900E85517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.IdopontfoglaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Idopontfoglalo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Idopontfoglalo";
+			};
+			name = Debug;
+		};
+		FF98B62028F1936900E85517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.IdopontfoglaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Idopontfoglalo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Idopontfoglalo";
+			};
+			name = Release;
+		};
+		FF98B62228F1936900E85517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.IdopontfoglaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Idopontfoglalo;
+			};
+			name = Debug;
+		};
+		FF98B62328F1936900E85517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZJ6DRR5H4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhajmilan.IdopontfoglaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Idopontfoglalo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF98B5EC28F1936800E85517 /* Build configuration list for PBXProject "Idopontfoglalo 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF98B61928F1936900E85517 /* Debug */,
+				FF98B61A28F1936900E85517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF98B61B28F1936900E85517 /* Build configuration list for PBXNativeTarget "Idopontfoglalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF98B61C28F1936900E85517 /* Debug */,
+				FF98B61D28F1936900E85517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF98B61E28F1936900E85517 /* Build configuration list for PBXNativeTarget "IdopontfoglaloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF98B61F28F1936900E85517 /* Debug */,
+				FF98B62028F1936900E85517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF98B62128F1936900E85517 /* Build configuration list for PBXNativeTarget "IdopontfoglaloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF98B62228F1936900E85517 /* Debug */,
+				FF98B62328F1936900E85517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF50399C29A5397B007BDD37 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FFAB1ECB29B1210A00D140D9 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FFAB1ECE29B1213400D140D9 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
+		FFAB1ED129B122DF00D140D9 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FFD1C6A029A6335000343F41 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		FFD1C6B329A697C400343F41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		FFF8FCD929AFDA03005095C4 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = exactVersion;
+				version = 1.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF50399D29A5397B007BDD37 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF50399C29A5397B007BDD37 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FF8C612429E07487008A62F2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD1C6B329A697C400343F41 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		FF94AC0F29882B5D00A1E866 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FF94AC1129882B5D00A1E866 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		FF94AC1329882B5E00A1E866 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		FF94AC1529882B5E00A1E866 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		FF94AC1729882B5E00A1E866 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		FF94AC1929882B5E00A1E866 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		FF94AC1B29882B5E00A1E866 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FF94AC1D29882B5E00A1E866 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		FF94AC1F29882B5E00A1E866 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		FF94AC2129882B5E00A1E866 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FF94AC2329882B5E00A1E866 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		FF94AC2529882B5E00A1E866 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		FF94AC2729882B5E00A1E866 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FF94AC2929882B5E00A1E866 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		FF94AC2B29882B5E00A1E866 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FF94AC2D29882B5E00A1E866 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		FF94AC2F29882B5E00A1E866 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		FF94AC3129882B5E00A1E866 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		FF94AC3329882B5E00A1E866 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		FF94AC3529882B5E00A1E866 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		FF94AC3729882B5E00A1E866 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		FF94AC3929882B5E00A1E866 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FF94AC3B29882B5E00A1E866 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		FF94AC3D29882B5E00A1E866 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		FF94AC3F29882B5E00A1E866 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		FF94AC4129882B5E00A1E866 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FF94AC4329882B5E00A1E866 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF94AC0E29882B5D00A1E866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		FFAB1ECC29B1210A00D140D9 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFAB1ECB29B1210A00D140D9 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		FFAB1ECF29B1213400D140D9 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFAB1ECE29B1213400D140D9 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		FFAB1ED229B122DF00D140D9 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFAB1ED129B122DF00D140D9 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		FFD1C6A129A6335000343F41 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD1C6A029A6335000343F41 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		FFF8FCDA29AFDA03005095C4 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFF8FCD929AFDA03005095C4 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FF98B5E928F1936800E85517 /* Project object */;
+}

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profilom-->
+        <scene sceneID="fCk-ka-E2t">
+            <objects>
+                <viewController storyboardIdentifier="MyProfile" id="cFx-sf-7gn" customClass="MyProfileViewController" customModule="Idopontfoglalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcZ-Vj-Xza">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jiD-KF-icE">
+                                <rect key="frame" x="110" y="20" width="100" height="100"/>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hok-37-Iyc"/>
+                                    <constraint firstAttribute="width" constant="100" id="jra-lj-yOJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1od-bz-5pA">
+                                <rect key="frame" x="74" y="125" width="172.5" height="34.5"/>
+                                <color key="tintColor" name="Red"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fénykép választása"/>
+                                <connections>
+                                    <action selector="choosePhotoButtonPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="0IL-fW-p5e"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oPE-oY-lWE" userLabel="Buttons">
+                                <rect key="frame" x="20" y="169.5" width="280" height="335"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJe-EF-Xq5">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Sbx-bo-CON"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Red"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Adatok módosítása" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectOperationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="nr6-J6-f2L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4a-lw-Ra0">
+                                        <rect key="frame" x="0.0" y="65" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zgD-19-Ota"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Személyes adatok" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" name="LightRed"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="personalInfoBtn"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="l4b-ej-m95"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-Xy-Foq">
+                                        <rect key="frame" x="0.0" y="120" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oe1-TU-6rG"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.63329957240000001" blue="0.55463369240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cím" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" name="LightRed"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="TfE-xm-isn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-Cu-bTH">
+                                        <rect key="frame" x="0.0" y="175" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ozb-zj-aKS"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.63329957240000001" blue="0.55463369240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Elérhetőség" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" name="LightRed"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="dF0-MH-Uui"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kos-G3-vUX">
+                                        <rect key="frame" x="0.0" y="230" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OQZ-jo-Zev"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.63329957240000001" blue="0.55463369240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Jelszó" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" name="LightRed"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="hT4-hQ-DZd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-7w-GaD">
+                                        <rect key="frame" x="0.0" y="285" width="280" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hy5-IG-knb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Fiók törlése" cornerStyle="capsule">
+                                            <color key="baseBackgroundColor" name="LightRed"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="cFx-sf-7gn" eventType="touchUpInside" id="Y0X-al-2dD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hda-PJ-cfv"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="oPE-oY-lWE" firstAttribute="leading" secondItem="Hda-PJ-cfv" secondAttribute="leading" constant="20" id="7CT-Nb-5o5"/>
+                            <constraint firstItem="1od-bz-5pA" firstAttribute="top" secondItem="jiD-KF-icE" secondAttribute="bottom" constant="5" id="AGe-Qu-YUv"/>
+                            <constraint firstItem="1od-bz-5pA" firstAttribute="centerX" secondItem="PcZ-Vj-Xza" secondAttribute="centerX" id="JuC-1G-eAW"/>
+                            <constraint firstItem="jiD-KF-icE" firstAttribute="top" secondItem="Hda-PJ-cfv" secondAttribute="top" constant="20" id="MNH-LD-Q8I"/>
+                            <constraint firstItem="oPE-oY-lWE" firstAttribute="top" secondItem="1od-bz-5pA" secondAttribute="bottom" constant="10" id="YjD-7U-1Ik"/>
+                            <constraint firstItem="Hda-PJ-cfv" firstAttribute="trailing" secondItem="oPE-oY-lWE" secondAttribute="trailing" constant="20" id="fMJ-Rz-yzs"/>
+                            <constraint firstItem="jiD-KF-icE" firstAttribute="centerX" secondItem="PcZ-Vj-Xza" secondAttribute="centerX" id="jw4-KR-MBQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profilom" image="person.fill" catalog="system" id="TlU-iq-TNK"/>
+                    <navigationItem key="navigationItem" id="Awu-4E-ZY5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="profilePicture" destination="jiD-KF-icE" id="acw-pU-yd8"/>
+                        <outlet property="selectOperationButton" destination="CJe-EF-Xq5" id="Zu1-zu-ETJ"/>
+                        <outletCollection property="operationBtnCollection" destination="g4a-lw-Ra0" collectionClass="NSMutableArray" id="ECO-ZE-FeU"/>
+                        <outletCollection property="operationBtnCollection" destination="0Rr-Xy-Foq" collectionClass="NSMutableArray" id="lVI-0Q-WMn"/>
+                        <outletCollection property="operationBtnCollection" destination="kpv-Cu-bTH" collectionClass="NSMutableArray" id="aEY-bE-Gjf"/>
+                        <outletCollection property="operationBtnCollection" destination="Kos-G3-vUX" collectionClass="NSMutableArray" id="94n-It-rV2"/>
+                        <outletCollection property="operationBtnCollection" destination="gTy-7w-GaD" collectionClass="NSMutableArray" id="fa9-eG-2cA"/>
+                        <segue destination="EeZ-5i-ioJ" kind="presentation" identifier="changePassword" id="he5-Tv-XYM"/>
+                        <segue destination="w6O-4q-Uev" kind="presentation" identifier="personalInfo" id="RG0-Mg-eF3"/>
+                        <segue destination="LWu-Zj-afv" kind="presentation" identifier="changeAddress" id="2dE-iD-iCt"/>
+                        <segue destination="Dzg-zI-jdH" kind="presentation" identifier="changeContact" id="0ny-gA-aJW"/>
+                        <segue destination="CJE-EQ-HzJ" kind="presentation" identifier="toAuth" modalTransitionStyle="coverVertical" id="9st-qt-JAI"/>
+                        <segue destination="rHB-vO-J05" kind="presentation" identifier="deleteAccount" id="xny-J9-QNI"/>
+                        <segue destination="cPh-6A-m8o" kind="show" identifier="deletedAccount" id="DpP-ep-dlI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7o-Ll-l2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5555" y="568"/>
+        </scene>
+        <!--Personal_Information-->
+        <scene sceneID="Cek-Or-Jdf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Personal_Information" referencedIdentifier="Personal_Information" id="w6O-4q-Uev" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T59-Ld-bWB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yf1-Y7-ptp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6707" y="483"/>
+        </scene>
+        <!--Address-->
+        <scene sceneID="dtB-MH-AZn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Address" referencedIdentifier="Address" id="LWu-Zj-afv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSf-Xa-ciS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6645" y="527"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="9Jr-Ez-ouK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contact" referencedIdentifier="Contact" id="Dzg-zI-jdH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3X-9g-NMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6643" y="567"/>
+        </scene>
+        <!--ChangePassword-->
+        <scene sceneID="6GH-jN-1wJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChangePassword" referencedIdentifier="ChangePassword" id="EeZ-5i-ioJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwC-wl-6QO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6687" y="604"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="fXO-Fk-8mM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Login" id="CJE-EQ-HzJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LX-th-yQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6629" y="652"/>
+        </scene>
+        <!--DeleteAccount-->
+        <scene sceneID="bx0-2K-VS0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DeleteAccount" referencedIdentifier="DeleteAccount" id="rHB-vO-J05" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cU-XU-9w3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6670" y="710"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="5qV-zJ-FLo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Welcome" id="cPh-6A-m8o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="56g-RD-DTO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF3-3F-PW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6645" y="763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="LightRed">
+            <color red="1" green="0.63137254901960782" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
